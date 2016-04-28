@@ -5,7 +5,9 @@ using namespace std;
 
 int main()
 {
-    Word * word = new Word("me", "我", 1);
+	string meaning;
+	cin >> meaning;
+    Word * word = new Word("me", meaning, 1);
 	word->addSentence("Please look at me.");
 	word->addSentence("Do you want to talk with me?");
     cout << word->getName() << endl;
