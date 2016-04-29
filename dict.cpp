@@ -1,7 +1,8 @@
 #include "dict.h"
 
-Dict::Dict(){
-	ifstream file("testDict.txt");
+
+Dict::Dict(string _filename){
+	ifstream file(_filename);
     while(!file.eof()){
         char buf[100];
         file.getline(buf, 100);

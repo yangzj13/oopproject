@@ -20,9 +20,8 @@ class Dict
 {
 	set<Word, wordLess> words;
 public:
-	Dict();
-/* 	Dict(string _filename);
-	void addWords(Word _word);
+	Dict(string _filename = "data/cet4.txt");
+/* 	void addWords(Word _word);
 	Word& randomWord(int type = 0); */
 	void searchWord(string _name);
 /* 	string searchEx(string _name);

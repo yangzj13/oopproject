@@ -16,6 +16,7 @@ int main()
 		cout << word->getSentences(i) << endl;
 	} */
 	
+	//Dict dictionary("data/cet6.txt");
 	Dict dictionary;
 	string name;
 	cin >> name;
