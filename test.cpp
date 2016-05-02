@@ -18,9 +18,16 @@ int main()
 	
 	//Dict dictionary("data/cet6.txt");
 	Dict dictionary;
-	string name;
-	cin >> name;
-	dictionary.searchWord(name);
+	string name, s1, s2;
+	name = dictionary.randomWord();
+	//cin >> s1 >> s2;
+	cout << name << endl;
+	dictionary.searchWordEx(name);
+	//dictionary.addWordSenten(name, s1);
+	//dictionary.searchWordSe(name);
+	//dictionary.addWordSenten(name, s2);
+	//dictionary.searchWordSe(name);
+	//cout << dictionary.searchWordLevel(name) << endl;
 	
 	return 0;
 }
