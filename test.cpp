@@ -16,7 +16,7 @@ int main()
 		cout << word->getSentences(i) << endl;
 	} */
 	
-	Dict dictionary("data/cet6.txt");
+	Dict dictionary("data/_gre.txt");
 	//Dict dictionary;
 	Counter cc("test.txt");
 	cc.count(dictionary);
