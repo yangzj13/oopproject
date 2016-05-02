@@ -24,6 +24,7 @@ public:
 	//void addWords(Word _word);
 	string randomWord(int _level = 0);
 	void searchWordEx(string _name); //直接输出单词解释
+	void searchWordEx(string _name, int _times);//输出单词解释和次数
 	bool addWordSenten(string _name, string _s); //一次只能加一句
 	void searchWordSe(string _name); //直接输出单词例句
 	int searchWordLevel(string _name);

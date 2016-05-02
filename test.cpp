@@ -1,4 +1,4 @@
-#include "dict.h"
+#include "counter.h"
 
 using namespace std;
 
@@ -16,13 +16,13 @@ int main()
 		cout << word->getSentences(i) << endl;
 	} */
 	
-	//Dict dictionary("data/cet6.txt");
-	Dict dictionary;
-	string name, s1, s2;
-	name = dictionary.randomWord();
+	Dict dictionary("data/cet6.txt");
+	//Dict dictionary;
+	Counter cc("test.txt");
+	cc.count(dictionary);
 	//cin >> s1 >> s2;
-	cout << name << endl;
-	dictionary.searchWordEx(name);
+	//cout << name << endl;
+	//dictionary.searchWordEx(name);
 	//dictionary.addWordSenten(name, s1);
 	//dictionary.searchWordSe(name);
 	//dictionary.addWordSenten(name, s2);

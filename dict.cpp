@@ -37,6 +37,16 @@ void Dict::searchWordEx(string _name){
     }
 }
 
+void Dict::searchWordEx(string _name, int _times){
+	Word f(_name, "find");
+	set<Word, wordLess>::iterator iter;
+	iter = words.find(f);
+	if(iter != words.end()) {  
+        cout << _name << " " << (*iter).getExplain()
+		 << " " << _times << endl;
+    }
+}
+
 int Dict::searchWordLevel(string _name){
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
