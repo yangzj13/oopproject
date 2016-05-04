@@ -1,4 +1,78 @@
+Africa n.非洲$0
+African a.非洲的 n.非洲人$0
+America n.美洲；美国$0
+American a.美洲的 n.美国人$0
+April n.四月$0
+Arabian a.阿拉伯的$0
+Asia n.亚洲$0
+Asian a.亚洲的 n.亚洲人$0
+Atlantic a.大西洋的 n.大西洋$0
+August n.八月$0
+Australia n.澳大利亚$0
+Australian a.澳大利亚的$0
+B.C. (缩)公元前$0
+Bible n.基督教《圣经》$0
+Britain n.不列颠，英国$0
+British a.不列颠的，英联邦的$0
+Canada n.加拿大$0
+Canadian a.加拿大的$0
+China n.中国$0
+Chinese a.中国的 n.中国人$0
+Christian n.基督教徒；信徒$0
+Christmas n.圣诞节$0
+December n.十二月$0
+England n.英格兰；英国$0
+English n.英语 a.英国人的$0
+Englishman n.英国男子$0
+Europe n.欧洲$0
+European a.欧洲的 n.欧洲人$0
+Fahrenheit n.华氏温度计$0
+February n.二月$0
+France n.法国，法兰西$0
+French a.法国的 n.法国人$0
+Friday n.星期五$0
+German a.德国的 n.德国人$0
+Germany n.德意志，德国$0
+God n.神，神像；上帝$0
+Greek a.希腊的 n.希腊人$0
+I pron.(主格)我$0
+India n.印度$0
+Indian a.印度的 n.印度人$0
+Italian a.意大利的n.意大利人$0
+January n.一月$0
+Japan n.日本，日本国$0
+Japanese a.日本的 n.日本人$0
+July n.七月$0
+June n.六月$0
+Latin a.拉丁的 n.拉丁语$0
+March n.三月$0
+Marxisim n.马克思主义$0
+Marxist a.马克思主义的$0
+May n.五月$0
+Mediterranean n.地中海 a.地中海的$0
+Mercury n.水星$0
+Mister n.先生$0
+Monday n.星期一$0
+Negro n.黑人$0
+November n.十一月$0
+Oceania n.大洋洲$0
+October n.十月$0
+P.M. n.下午，午后$0
+Portuguese n.葡萄牙人；葡萄牙语$0
+Roman n.古罗马人 a.罗马的$0
+Russian a.俄罗斯的 n.俄国人$0
+Saturday n.星期六$0
+September n.九月$0
+Soviet n.苏维埃 a.苏维埃的$0
+Spanish a.西班牙的n.西班牙人$0
+Sunday n.星期日，礼拜日$0
+Swiss a.瑞士的 n.瑞士人$0
+Thursday n.星期四$0
+Tuesday n.星期二$0
+Wednesday n.星期三$0
+X-ray n.X射线，X光$0
 a art.一(个)；每一(个)$0
+a.m (缩)上午，午前$0
 abandon vt.丢弃；放弃，抛弃$0
 ability n.能力；能耐，本领$0
 able a.有能力的；出色的$0
@@ -88,8 +162,6 @@ affect vt.影响；感动$0
 affection n.慈爱，爱；爱慕$0
 afford vt.担负得起…；提供$0
 afraid a.害怕的；担心的$0
-Africa n.非洲$0
-African a.非洲的 n.非洲人$0
 after prep.在…以后；次于$0
 afternoon n.下午，午后$0
 afterward ad.后来，以后$0
@@ -133,12 +205,9 @@ altitude n.高，高度；高处$0
 altogether ad.完全；总而言之$0
 aluminium n.铝$0
 always ad.总是，一直；永远$0
-a.m (缩)上午，午前$0
 amaze vt.使惊奇，使惊愕$0
 ambition n.雄心，抱负，野心$0
 ambulance n.救护车；野战医院$0
-America n.美洲；美国$0
-American a.美洲的 n.美国人$0
 among prep.在…之中$0
 amongst prep在…之中(=among)$0
 amount n.总数；数量；和$0
@@ -198,8 +267,6 @@ approval n.赞成，同意；批准$0
 approve vt.赞成，称许；批准$0
 approximate a.近似的 vt.近似$0
 approximately ad.近似地，大约$0
-April n.四月$0
-Arabian a.阿拉伯的$0
 arbitrary a.随心所欲的；专断的$0
 architecture n.建筑学；建筑式样$0
 area n.面积；地区；领域$0
@@ -225,8 +292,6 @@ artistic a.艺术的；艺术家的$0
 as conj.当…的时候$0
 ash n.灰，灰末；骨灰$0
 ashamed a.惭愧(的)；羞耻(的)$0
-Asia n.亚洲$0
-Asian a.亚洲的 n.亚洲人$0
 aside ad.在旁边，到旁边$0
 ask vt.问；要求；邀请$0
 asleep a.睡着的，睡熟的$0
@@ -246,7 +311,6 @@ astonish vt.使惊讶，使吃惊$0
 astronaut n.宇宙航行员，宇航员$0
 at prep.在…里；在…时$0
 athlete n.运动员；田径运动员$0
-Atlantic a.大西洋的 n.大西洋$0
 atmosphere n.大气；空气；气氛$0
 atmospheric a.大气的；大气层的$0
 atom n.原子；微粒；微量$0
@@ -264,11 +328,8 @@ attraction n.吸引；吸引力；引力$0
 attractive a.有吸引力的$0
 attribute vt.把…归因于 n.属性$0
 audience n.听众，观众，读者$0
-August n.八月$0
 aunt n.伯母，婶母，姑母$0
 aural a.耳的，听觉的$0
-Australia n.澳大利亚$0
-Australian a.澳大利亚的$0
 author n.作者，作家$0
 authority n.当局，官方；权力$0
 auto n.(口语)汽车$0
@@ -333,13 +394,11 @@ bathroom n.浴室；盥洗室$0
 battery n.电池；一套，一组$0
 battle n.战役；斗争 vi.作战$0
 bay n.湾；山脉中的凹处$0
-B.C. (缩)公元前$0
 be aux.v.&vi.是，在，做$0
 beach n.海滩，湖滩，河滩$0
 beam n.梁；横梁；束，柱$0
 bean n.豆，蚕豆$0
 bear n.熊；粗鲁的人$0
-bear vt.容忍；负担；生育$0
 beard n.胡须，络腮胡子$0
 beast n.兽，野兽；牲畜$0
 beat vt.&vi.打，敲；打败$0
@@ -383,7 +442,6 @@ betray vt.背叛；辜负；泄漏$0
 better a.较好的 ad.更好地$0
 between prep.在…中间$0
 beyond prep.在…的那边$0
-Bible n.基督教《圣经》$0
 bicycle n.自行车，脚踏车$0
 big a.大的，巨大的$0
 bike n.自行车 vi.骑自行车$0
@@ -447,7 +505,6 @@ boundary n.分界线，办界$0
 bow n.弓；蝴蝶结；鞠躬$0
 bowl n.碗，钵；碗状物$0
 box n.箱，盒；包箱$0
-box vi.拳击，打拳$0
 boy n.男孩，少年；家伙$0
 brain n.脑，脑髓；脑力$0
 brake n.闸，刹车 vi.制动$0
@@ -475,8 +532,6 @@ brim n.边，边缘；帽沿$0
 bring vt.带来；引出；促使$0
 brisk a.活泼的；清新的$0
 bristle n.短而硬的毛；鬃毛$0
-Britain n.不列颠，英国$0
-British a.不列颠的，英联邦的$0
 brittle a.脆的；易损坏的$0
 broad a.宽的，阔的；广泛的$0
 broadcast n.广播，播音$0
@@ -538,9 +593,6 @@ camp n.野营，营地，兵营$0
 campaign n.战役；运动$0
 campus n.校园，学校场地$0
 can aux.v.能，会，可能$0
-can n.罐头，听头；容器$0
-Canada n.加拿大$0
-Canadian a.加拿大的$0
 canal n.运河；沟渠；管$0
 cancel vt.取消，撤消；删去$0
 cancer n.癌，癌症，肿瘤$0
@@ -575,7 +627,6 @@ carry vt.携带；运载；传送$0
 cart n.二轮运货马车$0
 carve vt.刻，雕刻；切开$0
 case n.情况；事实；病例$0
-case n.箱(子)，盒(子)，套$0
 cash n.现金，现款$0
 cassette n.盒式录音带；盒子$0
 cast vt.投，扔，抛；浇铸$0
@@ -646,16 +697,12 @@ childish a.孩子的；幼稚的$0
 chill vt.使变冷 n.寒冷$0
 chimney n.烟囱，烟筒；玻璃罩$0
 chin n.颏，下巴$0
-China n.中国$0
 china n.瓷器，瓷料$0
-Chinese a.中国的 n.中国人$0
 chocolate n.巧克力；巧克力糖$0
 choice n.选择，抉择$0
 choke vt.使窒息；塞满$0
 choose vt.选择，挑选；情愿$0
 chop vt.砍，劈；切细vi.砍$0
-Christian n.基督教徒；信徒$0
-Christmas n.圣诞节$0
 church n.教堂，礼拜堂；教会$0
 cigarette n.香烟，纸烟，卷烟$0
 cinema n.电影院；电影，影片$0
@@ -836,7 +883,6 @@ container n.容器；集装箱$0
 contemporary a.当代的，同时代的$0
 contempt n.轻蔑；藐视；受辱$0
 content n.内容，目录；容量$0
-content a.满意的，满足的$0
 contest vt.争夺，争取；辩驳$0
 continent n.大陆；陆地；洲$0
 continual a.不断的；连续的$0
@@ -982,7 +1028,6 @@ decade n.十年，十年期$0
 decay vi.腐烂；衰败 n.腐烂$0
 deceit n.欺骗，欺诈$0
 deceive vt.欺骗，蒙蔽，行骗$0
-December n.十二月$0
 decent a.正派的；体面的$0
 decide vt.决定，决心；解决$0
 decision n.决定，决心；果断$0
@@ -1005,8 +1050,8 @@ definitely ad.一定地，明确地$0
 definition n.定义，释义；定界$0
 degree n.程度；度；学位$0
 delay vt.推迟；耽搁；延误$0
-delete vt.删除；擦掉$0
 delegation n.代表团$0
+delete vt.删除；擦掉$0
 delicate a.纤细的；易碎的$0
 delicious a.美味的，怡人的$0
 delight n.快乐 vt.使高兴$0
@@ -1092,7 +1137,6 @@ disagree vi.有分歧；不一致$0
 disappear vi.不见，失踪；消失$0
 disappoint vt.使失望，使受挫折$0
 disaster n.灾难，灾祸；天灾$0
-disk n.圆盘，唱片；磁盘$0
 discard vt.丢弃，抛弃，遗弃$0
 discharge vt.释放；排出 n.释放$0
 discipline n.纪律；训练 vt.训练$0
@@ -1107,13 +1151,14 @@ disguise vi.隐瞒，掩埋 n.假装$0
 disgust n.厌恶，憎恶$0
 dish n.碟，盘子；菜肴$0
 dishonour n.不光彩；丢脸的人$0
+disk n.圆盘，唱片；磁盘$0
 dislike vt.&n.不喜爱，厌恶$0
 dismiss vt.不再考虑；解雇$0
 disorder n.混乱，杂乱；骚乱$0
 display vt.陈列，展览；显示$0
+displease vt.使不愉快，使生气$0
 disposal n.丢掉，处理，销毁$0
 dispose vi.去掉，丢掉；销毁$0
-displease vt.使不愉快，使生气$0
 dispute vi.争论，争执 n.争论$0
 dissatisfy vi.使不满，使不平$0
 dissolve vt.使溶解；解散$0
@@ -1282,9 +1327,6 @@ engage vt.使从事于；聘用$0
 engine n.发动机，引擎；机车$0
 engineer n.工程师，技师$0
 engineering n.工程，工程学$0
-England n.英格兰；英国$0
-English n.英语 a.英国人的$0
-Englishman n.英国男子$0
 enjoy vt.享受；欣赏，喜爱$0
 enlarge vt.扩大，扩展；放大$0
 enormous a.巨大的，庞大的$0
@@ -1317,13 +1359,10 @@ essential a.必要的，本质的$0
 establish vt.建立，设立；确立$0
 establishment n.建立，设立，确立$0
 estimate vt.估计，评价 n.估计$0
-Europe n.欧洲$0
-European a.欧洲的 n.欧洲人$0
 evaluate vt.评价，估…的价$0
 evaporate vt.使蒸发 vi.蒸发$0
 eve n.前夜，前夕，前一刻$0
 even ad.甚至；甚至更，还$0
-even a.均匀的；平的$0
 evening n.傍晚，黄昏，晚上$0
 event n.事件，大事；事变$0
 eventually ad.终于；最后$0
@@ -1411,12 +1450,10 @@ factor n.因素；因子，系数$0
 factory n.工厂，制造厂$0
 faculty n.才能，能力；系，科$0
 fade vi.褪色；逐渐消失$0
-Fahrenheit n.华氏温度计$0
 fail vi.失败；失灵；不能$0
 failure n.失败；失败的人$0
 faint a.微弱的；虚弱的$0
 fair a.公平的；相当的$0
-fair n.定期集市；博览会$0
 fairly ad.相当；公平地$0
 faith n.信任，信心；信仰$0
 faithful a.忠诚的；如实的$0
@@ -1428,7 +1465,6 @@ family n.家，家庭；家族$0
 famine n.饥荒；严重的缺乏$0
 famous a.著名的，出名的$0
 fan n.(运动等)狂热爱好者$0
-fan n.扇子，风扇 vt.扇$0
 fancy n.想象力；设想；爱好$0
 far a.远的 ad.远，遥远$0
 fare n.车费，船费，票价$0
@@ -1456,7 +1492,6 @@ feasible a.可行的；可能的$0
 feast n.盛宴，筵席；节日$0
 feather n.羽毛；翎毛；羽状物$0
 feature n.特征，特色；面貌$0
-February n.二月$0
 federal a.联邦的；联盟的$0
 fee n.费，酬金；赏金$0
 feeble a.虚弱的；微弱的$0
@@ -1493,7 +1528,6 @@ financial a.财政的，金融的$0
 find vt.找到；发觉；找出$0
 finding n.发现；调查的结果$0
 fine a.美好的；纤细的$0
-fine n.罚金，罚款$0
 finger n.手指；指状物$0
 finish vt.完成，结束 n.结束$0
 fire n.火；火灾 vi.开火$0
@@ -1511,7 +1545,6 @@ flame n.火焰；光辉；热情$0
 flare vi.闪耀 vt.使闪亮$0
 flash n.闪光 vi.闪，闪烁$0
 flat a.平的，扁平的$0
-flat n.一套房间；单元住宅$0
 flavour n.味，味道；风味$0
 fleet n.舰队；船队，机群$0
 flesh n.肉，肌肉；肉体$0
@@ -1579,20 +1612,17 @@ fraction n.小部分；片断；分数$0
 fragment n.碎片，破片，碎块$0
 frame n.框架，框子；构架$0
 framework n.框架，构架，结构$0
-France n.法国，法兰西$0
 frank a.坦白的，直率的$0
 free a.自由的；空闲的$0
 freedom n.自由；自主$0
 freely ad.自由地；直率地$0
 freeze vi.冻；结冻vt.使结冰$0
 freight n.货运；货物；运费$0
-French a.法国的 n.法国人$0
 frequency n.屡次；次数；频率$0
 frequent a.时常发生的；经常的$0
 frequently ad.时常，常常$0
 fresh a.新的；新鲜的$0
 friction n.摩擦，摩擦力$0
-Friday n.星期五$0
 fridge n.电冰箱$0
 friend n.朋友，友人$0
 friendly a.友好的，友谊的$0
@@ -1657,8 +1687,6 @@ genuine a.真的；真正的$0
 geography n.地理，地理学$0
 geometry n.几何，几何学$0
 germ n.微生物，细菌，幼芽$0
-German a.德国的 n.德国人$0
-Germany n.德意志，德国$0
 gesture n.姿势，手势；姿态$0
 get vi.变得，成为；到达$0
 ghost n.鬼，灵魂；鬼魂$0
@@ -1683,7 +1711,6 @@ glue n.胶，胶水 vt.胶合$0
 go vi.去；走；变为$0
 goal n.球门；得分；目的$0
 goat n.山羊$0
-God n.神，神像；上帝$0
 gold n.金；钱财 a.金制的$0
 golden a.金色的；极好的$0
 golf n.高尔夫球$0
@@ -1704,9 +1731,9 @@ gradual a.逐渐的；渐进的$0
 gradually ad.逐渐地，逐步地$0
 graduate n.毕业生 vi.大学毕业$0
 grain n.谷物，谷粒；颗粒$0
-gramme n.克(重量单位)$0
 grammar n.语法；语法书$0
 grammatical a.语法上的$0
+gramme n.克(重量单位)$0
 grand a.宏伟的；重大的$0
 granddaughter n.孙女，外孙女$0
 grandfather n.祖父；外祖父$0
@@ -1725,7 +1752,6 @@ gray a.灰色的 n.灰色$0
 great a.大的；伟大的$0
 greatly ad.大大地，非常$0
 greedy a.贪吃的；贪婪的$0
-Greek a.希腊的 n.希腊人$0
 green a.绿色的 n.绿色$0
 greenhouse n.温室，玻璃暖房$0
 greet vt.问候，招呼；反应$0
@@ -1904,7 +1930,7 @@ hurt vt.使受伤；使痛心$0
 husband n.丈夫$0
 hut n.小屋，棚屋$0
 hydrogen n.氢$0
-I pron.(主格)我$0
+i.e. (=that is)那就是，即$0
 ice n.冰，冰块 vt.冰镇$0
 ice-cream n.冰淇淋$0
 idea n.想法；思想；意见$0
@@ -1913,7 +1939,6 @@ identical a.完全相同的；同一的$0
 identify vt.认出，识别，鉴定$0
 idiom n.习语，成语$0
 idle a.空闲的；懒散的$0
-i.e. (=that is)那就是，即$0
 if conj.假如，如果$0
 ignorant a.不知道的；无知的$0
 ignore vt.不顾，不理，忽视$0
@@ -1960,8 +1985,6 @@ indefinite a.不明确的；不定的$0
 independence n.独立，自主，自立$0
 independent a.独立的；自主的$0
 index n.索引；指数；指标$0
-India n.印度$0
-Indian a.印度的 n.印度人$0
 indicate vt.标示，表示；表明$0
 indication n.指示；表示；表明$0
 indifferent a.冷漠的；不积极的$0
@@ -2071,17 +2094,12 @@ island n.岛，岛屿$0
 isolate vt.使隔离，使孤立$0
 issue n.问题；发行 vt.发行$0
 it pron.这，那，它$0
-Italian a.意大利的n.意大利人$0
 item n.条，条款；一条$0
 its pron.它的$0
 itself pron.它自己；自身$0
 jacket n.短上衣，茄克衫$0
 jail n.监狱 vi.监禁$0
 jam n.果酱$0
-jam vt.使塞满；使堵塞$0
-January n.一月$0
-Japan n.日本，日本国$0
-Japanese a.日本的 n.日本人$0
 jar n.罐子，坛子，广口瓶$0
 jaw n.颌，颚$0
 jazz n.爵士音乐，爵士舞曲$0
@@ -2102,9 +2120,7 @@ joyful a.十分喜悦的，快乐的$0
 judge n.法官；裁判员$0
 judgement n.意见；审判；判断$0
 juice n.(水果等)汁，液$0
-July n.七月$0
 jump vi.跳；暴涨 vt.跳过$0
-June n.六月$0
 jungle n.丛林，密林，莽丛$0
 junior a.年少的 n.晚辈$0
 jury n.陪审团；评奖团$0
@@ -2123,7 +2139,6 @@ kill vi.杀死；扼杀；消磨$0
 kilogram n.千克，公斤$0
 kilometer n.千米，公里$0
 kind n.种类$0
-kind a.友好的；和蔼的$0
 kindness n.仁慈，好意$0
 king n.国王，君主$0
 kingdom n.王国；领域，界$0
@@ -2164,11 +2179,9 @@ large a.大的；巨大的$0
 largely ad.大部分；大量地$0
 laser n.激光$0
 last a.最后的 ad.最后$0
-last vi.持续，持久；耐久$0
 late a.迟的 ad.迟，晚$0
 lately ad.最近，不久前$0
 later ad.后来；过一会儿$0
-Latin a.拉丁的 n.拉丁语$0
 latter a.(两者中)后者的$0
 laugh vi.笑，发笑 n.笑$0
 laughter n.笑，笑声$0
@@ -2183,7 +2196,6 @@ layer n.层，层次；铺设者$0
 layout n.布局，安排，设计$0
 lazy a.懒惰的，懒散的$0
 lead vt.为…带路；领导$0
-lead n.铅，铅制品$0
 leader n.领袖，领导人；首领$0
 leadership n.领导$0
 leading a.指导的；最主要的$0
@@ -2228,18 +2240,15 @@ license n.许可；执照 vt.准许$0
 lick vt.舔；舔吃$0
 lid n.盖子，盖，囊盖$0
 lie vi.躺，平放；位于$0
-lie vi.说谎，欺骗 n.谎话$0
 lieutenant n.陆军中尉；副职官员$0
 life n.生命；一生；寿命$0
 lifetime n.一生，终身$0
 lift vt.提起，提高 n.电梯$0
 light n.光，光线；灯，光源$0
-light a.轻的，少量的$0
 lighten vt.照亮，使明亮$0
 lightly ad.轻轻地，轻松地$0
 lightning n.闪电，闪电放电$0
 like vt.喜欢；喜爱；希望$0
-like prep.像，如；像要$0
 likely a.可能的 ad.很可能$0
 likewise ad.同样地；也，又$0
 limb n.肢，臂，翼；树枝$0
@@ -2281,7 +2290,6 @@ logic n.逻辑，推理；逻辑性$0
 logical a.逻辑的；符合逻辑的$0
 lonely a.孤独的；荒凉的$0
 long a.长的；远的 ad.长久$0
-long vi.渴望，极想念$0
 look vi.看，显得 n.看$0
 loop n.圈，环，环孔$0
 loose a.松的；宽松的$0
@@ -2319,8 +2327,8 @@ magnificent n.壮丽的；华丽的$0
 maid n.女佣，女仆；少女$0
 mail n.邮件 vt.邮寄$0
 main a.主要的，最重要的$0
-mainly ad.主要地，大体上$0
 mainland n.大陆$0
+mainly ad.主要地，大体上$0
 maintain vt.维持；赡养；维修$0
 maintenance n.维持，保持；维修$0
 major a.较大的 n.专业$0
@@ -2340,7 +2348,6 @@ manufacturer n.制造商；制造厂$0
 many a.许多的 pron.许多人$0
 map n.地图；图；天体图$0
 marble n.大理石$0
-March n.三月$0
 march vi.行军；游行示威$0
 margin n.页边的空白；边缘$0
 marine a.海的；海上的$0
@@ -2350,15 +2357,12 @@ marriage n.结婚，婚姻；婚礼$0
 married a.已婚的；婚姻的$0
 marry vt.娶，嫁 vi.结婚$0
 marvelous a.奇迹般的；了不起的$0
-Marxisim n.马克思主义$0
-Marxist a.马克思主义的$0
 mask n.面具；伪装 vt.掩饰$0
 mass n.众多；团；群众$0
 master n.主人；能手；硕士$0
 masterpiece n.杰作，名著$0
 mat n.席子；草席；垫子$0
 match n.比赛，竞赛；对手$0
-match n.(一根)火柴$0
 mate n.伙伴，同事；配偶$0
 material n.材料；素材a.物质的$0
 materialism n.唯物主义$0
@@ -2368,7 +2372,6 @@ maths n.(英)数学$0
 matter n.事情；物质 vi.要紧$0
 mature a.成熟的 vt.使成熟$0
 maximum n.最大量 a.最大的$0
-May n.五月$0
 may v.aux.可能；可以，祝$0
 maybe ad.大概，或许；也许$0
 mayor n.市长$0
@@ -2376,8 +2379,6 @@ me pron.(宾格)我$0
 meadow n.草地，牧草地$0
 meal n.膳食，一餐$0
 mean vt.作…解释；意指$0
-mean a.自私的；吝啬的$0
-mean a.平均的 n.平均值$0
 meaning n.意义，意思；意图$0
 means n.方法，手段，工具$0
 meantime n.其时，其间 ad.当时$0
@@ -2393,7 +2394,6 @@ mechanics n.力学；技术性细节$0
 medal n.奖章，勋章，纪念章$0
 medical a.医学的；内科的$0
 medicine n.内服药；医学$0
-Mediterranean n.地中海 a.地中海的$0
 medium n.媒质；中间a.中等的$0
 meet vt.遇见 vi.相遇$0
 meeting n.聚集，会合，会见$0
@@ -2408,7 +2408,6 @@ mention vt.&n.提及，说起$0
 menu n.菜单；饭菜，菜肴$0
 merchant n.商人；零售商$0
 mercury n.水银，汞$0
-Mercury n.水星$0
 mercy n.仁慈，慈悲，恩惠$0
 mere a.仅仅的；纯粹的$0
 merely ad.仅仅，只不过$0
@@ -2430,7 +2429,6 @@ middle n.中部 a.中部的$0
 midnight n.午夜，子夜，夜半$0
 midst n.中部，中间，当中$0
 might v.aux.可能，会，也许$0
-might n.力量，威力，能力$0
 mild a.和缓的；温柔的$0
 mile n.英里$0
 military a.军事的；军人的$0
@@ -2440,7 +2438,6 @@ millimetre n.毫米$0
 million num.百万 n.许多$0
 mind n.头脑；理智；记忆$0
 mine pron.我的$0
-mine n.矿，矿山；地雷$0
 miner n.矿工$0
 mineral n.矿物 a.矿物的$0
 minimum n.最小量 a.最小的$0
@@ -2450,19 +2447,16 @@ minor a.较小的；较次要的$0
 minority n.少数；少数民族$0
 minus a.负的 prep.减(去)$0
 minute n.分，分钟；一会儿$0
-minute a.微细的；详细的$0
 miracle n.奇迹，令人惊奇的人$0
 mirror n.镜子 vt.反映，反射$0
 miserable a.痛苦的，悲惨的$0
 mislead vt.使误入岐途$0
 miss n.小姐$0
-miss vt.未看到；惦念$0
 missile n.发射物；导弹$0
 missing a.缺掉的，失去的$0
 mission n.使命，任务；使团$0
 mist n.薄雾$0
 mistake n.错误 vi.误解，弄错$0
-Mister n.先生$0
 mistress n.女主人；夫人$0
 misunderstand vt.误解，误会，曲解$0
 mix vt.使混合，混淆$0
@@ -2479,7 +2473,6 @@ moist a.湿润的；多雨的$0
 moisture n.潮湿，湿气；温度$0
 molecule n.分子，克分子$0
 moment n.片刻，瞬间，时刻$0
-Monday n.星期一$0
 money n.货币；金钱，财富$0
 monitor n.班长；监视器$0
 monkey n.猴子，猿$0
@@ -2566,7 +2559,6 @@ needle n.针，缝补，编织针$0
 needless a.不需要的$0
 negative a.否定的；消极的$0
 neglect vt.忽视，忽略；疏忽$0
-Negro n.黑人$0
 neighbour n.邻居，邻国，邻人$0
 neighbourhood n.邻居关系；邻近$0
 neither a.(两者)都不的$0
@@ -2617,7 +2609,6 @@ notice vt.注意 n.通知；注意$0
 noticeable a.显而易见的；重要的$0
 noun n.名词$0
 novel n.小说 a.新的$0
-November n.十一月$0
 now ad.现在；立刻；于是$0
 nowadays ad.现今，现在$0
 nowhere ad.任何地方都不$0
@@ -2630,11 +2621,11 @@ nurse n.保姆；护士 vt.看护$0
 nursery n.托儿所；苗圃$0
 nut n.坚果，干果；螺母$0
 nylon n.尼龙，耐纶$0
+o'clock ad.…点钟$0
 oak n.栎属植物；栎木$0
 oar n.浆，橹$0
 obey vt.顺从 vi.服从$0
 object n.物，物体；目的$0
-object vi.反对；抱反感$0
 objection n.反对，异议；不喜欢$0
 objective a.客观的；无偏见的$0
 oblige vt.迫使；施恩惠于$0
@@ -2653,9 +2644,6 @@ occupy vt.占领；占，占有$0
 occur vi.发生；出现，存在$0
 occurrence n.发生，出现；事件$0
 ocean n.海洋；洋$0
-Oceania n.大洋洲$0
-o'clock ad.…点钟$0
-October n.十月$0
 odd a.奇数的；单只的$0
 odour n.气味，香气；味道$0
 of prep.…的；由于$0
@@ -2767,7 +2755,6 @@ physicist n.物理学家$0
 physics n.物理学$0
 piano n.钢琴$0
 pick n.镐，鹤嘴锄$0
-pick vt.拾，摘 vi.采摘$0
 picnic n.郊游，野餐 vi.野餐$0
 picture n.画，图片 vt.画$0
 pie n.(西点)馅饼$0
@@ -2791,7 +2778,6 @@ pipeline n.管道，管线$0
 pistol n.手枪$0
 pit n.坑，地坑；煤矿$0
 pitch n.沥青$0
-pitch vt.投，掷 vi.投掷$0
 pity n.怜悯；遗憾 vt.同情$0
 place n.地方，地点；住所$0
 plain n.平原 a.清楚的$0
@@ -2819,7 +2805,6 @@ plug n.塞子；插头 vt.塞$0
 plunge vt.使投入；使陷入$0
 plural a.复数的 n.复数$0
 plus prep.加，加上 a.正的$0
-P.M. n.下午，午后$0
 pocket n.衣袋 n.袖珍的$0
 poem n.诗，韵文，诗体文$0
 poet n.诗人$0
@@ -2828,7 +2813,6 @@ point n.点；要点；细目；分$0
 poison n.毒，毒药 vt.毒害$0
 poisonous a.有毒的，有害的$0
 pole n.杆，柱$0
-pole n.极(点)，磁极，电极$0
 police n.警察；警察当局$0
 policeman n.警察$0
 policy n.政策，方针$0
@@ -2841,10 +2825,8 @@ pollute vt.弄脏，污染，沾污$0
 pollution n.污染$0
 pond n.池塘$0
 pool n.水塘，游泳池，水池$0
-pool n.共用物 vt.共有$0
 poor a.贫穷的；贫乏的$0
 pop n.流行音乐，流行歌曲$0
-pop n.砰的一声，爆破声$0
 popular a.民众的；流行的$0
 population n.人口；全体居民$0
 porch n.门廊，入口处$0
@@ -2855,7 +2837,6 @@ portable a.轻便的；手提的$0
 porter n.搬运工人$0
 portion n.一部分；一分$0
 portrait n.消像，画像$0
-Portuguese n.葡萄牙人；葡萄牙语$0
 position n.位置；职位；姿势$0
 positive a.确定的；积极的$0
 possess vt.占用，拥有(财产)$0
@@ -2864,8 +2845,6 @@ possibility n.可能；可能的事$0
 possible a.可能的；可能存在的$0
 possibly ad.可能地；也许$0
 post n.柱，桩，杆 vt.贴出$0
-post n.邮政，邮寄；邮件$0
-post n.岗位，哨所；职位$0
 postage n.邮费，邮资$0
 postman n.邮递员$0
 postpone vt.延迟，推迟，延缓$0
@@ -2873,7 +2852,6 @@ pot n.锅，壶，罐，盆$0
 potato n.马铃薯，土豆$0
 potential a.潜在的 n.潜力$0
 pound n.磅；英磅$0
-pound vt.捣碎；舂烂；猛击$0
 pour vt.灌，倒 vi.倾泻$0
 poverty n.贫穷，贫困$0
 powder n.粉末；药粉；火药$0
@@ -2905,8 +2883,6 @@ preposition n.前置词，介词$0
 prescribe vt.命令；处(方)$0
 presence n.出席，到场；在$0
 present a.现在的 n.目前$0
-present vt.赠送; 介绍; 提出$0
-present n.礼物，赠送物$0
 presently ad.一会儿；目前$0
 preserve vt.保护；保存；腌渍$0
 president n.总统；校长；会长$0
@@ -2998,12 +2974,10 @@ pull vt.拉，拖；拉，拉力$0
 pulse n.脉搏；脉冲，脉动$0
 pump n.泵 vt.用抽机抽$0
 punch vt.冲出 n.冲压机$0
-punch vt.用拳猛击 n.拳打$0
 punctual a.严守时刻的；准时的$0
 punish vt.罚，惩罚，处罚$0
 punishment n.罚，惩罚，处罚$0
 pupil n.学生，小学生$0
-pupil n.瞳孔$0
 puppet n.木偶，玩偶；傀儡$0
 purchase n.买，购买 vt.买$0
 pure a.纯粹的；纯洁的$0
@@ -3041,10 +3015,8 @@ quotation n.引用；引文；报价单$0
 quote vt.引用，引证；报价$0
 rabbit n.兔子，野兔$0
 race n.比赛，竞赛，竞争$0
-race n.人种，种族，民族$0
 racial a.种族的，人种的$0
 rack n.搁物架；行李架$0
-rack vt.使苦痛，折磨$0
 racket n.球拍$0
 radar n.雷达，无线电探测器$0
 radiate vi.发射光线；辐射$0
@@ -3095,7 +3067,6 @@ really ad.真正地；实在$0
 realm n.王国，国土；领域$0
 reap vt.&vi.收割，收获$0
 rear n.后部，后面；背面$0
-rear vt.抚养，培养；栽种$0
 reason n.理由；理性 vi.推理$0
 reasonable a.合情合理的；公道的$0
 rebel vi.造反 n.造反者$0
@@ -3228,7 +3199,6 @@ response n.作答，回答；响应$0
 responsibility n.责任，责任心；职责$0
 responsible a.有责任的；尽责的$0
 rest n.休息；安静；静止$0
-rest n.剩余部分；其余的人$0
 restaurant n.餐馆，饭店，菜馆$0
 restless a.不安定的，焦虑的$0
 restore vt.恢复；归还；修补$0
@@ -3267,7 +3237,6 @@ rifle n.步枪，来复枪$0
 right a.正确的 ad.对，正好$0
 rigid a.刚硬的；僵硬的$0
 ring n.环形物(如圈、环等)$0
-ring vi.鸣；按铃 n.铃声$0
 ripe a.熟的；时机成熟的$0
 ripen vt.使熟 vi.成熟$0
 rise vi.起立；升起；上涨$0
@@ -3283,13 +3252,11 @@ robbery n.抢劫，劫掠，盗取$0
 robe n.长袍，长衣，浴衣$0
 robot n.机器人；自动机$0
 rock vt.摇，使动摇 vi.摇$0
-rock n.岩，岩石；石头$0
 rocket n.火箭，火箭发动机$0
 rod n.杆，竿，棒$0
 role n.角色，作用，任务$0
 roll vi.&vt.滚动；转动$0
 roller n.滚柱，滚筒，滚轴$0
-Roman n.古罗马人 a.罗马的$0
 romantic a.浪漫的；传奇的$0
 roof n.屋顶，车顶；顶$0
 room n.房间；地位；余地$0
@@ -3308,7 +3275,6 @@ rouse vt.唤醒，唤起；惊起$0
 route n.路，路线，路程$0
 routine n.例行公事 a.日常的$0
 row n.(一)排，(一)行$0
-row vt.划(船等) vi.划船$0
 royal a.王的；皇家的$0
 rub vt.摩擦，擦 vi.摩擦$0
 rubber n.橡皮(擦子)；橡胶$0
@@ -3323,7 +3289,6 @@ run vi.跑，奔；行驶；流$0
 runner n.赛跑的人$0
 rural a.农村的，田园的$0
 rush vi.冲，奔 vt.催促$0
-Russian a.俄罗斯的 n.俄国人$0
 rust n.锈 vi.生锈，氧化$0
 rusty a.生锈的；变迟钝的$0
 sack n.袋，麻袋；开除$0
@@ -3334,7 +3299,6 @@ saddle n.鞍子，马鞍$0
 sadly ad.悲痛地，悲哀地$0
 sadness n.悲痛，悲哀$0
 safe a.安全的；谨慎的$0
-safe n.保险箱$0
 safely ad.安全地；可*地$0
 safety n.安全，保险$0
 sail n.帆；船  vi.航行$0
@@ -3356,7 +3320,6 @@ satellite n.卫星；人造卫星$0
 satisfaction n.满意；快事；赔偿$0
 satisfactory a.令人满意的，良好的$0
 satisfy vt.满足；使满意$0
-Saturday n.星期六$0
 sauce n.调味汁，酱汁$0
 saucer n.茶托，浅碟$0
 sausage n.香肠，腊肠$0
@@ -3365,7 +3328,6 @@ saving n.搭救；节约；存款$0
 saw n.锯子 vt.锯，锯开$0
 say vt.说；说明；比如说$0
 scale n.天平，磅秤，秤$0
-scale n.标度；比例；大小$0
 scan vt.细看；浏览；扫描$0
 scar n.伤疤，伤痕；创伤$0
 scarce a.缺乏的；希有的$0
@@ -3397,14 +3359,12 @@ screen n.屏；屏幕 vt.掩蔽$0
 screw n.螺旋，螺丝 vt.拧紧$0
 sea n.海，海洋$0
 seal n.封蜡；印记 vt.封$0
-seal n.海豹$0
 seaman n.海员，水手；水兵$0
 seaport n.海港，港市$0
 search vt.在…中搜寻，搜查$0
 season n.季，季节，时节$0
 seat n.座；座部 vt.使坐下$0
 second num.第二 a.二等的$0
-second n.秒$0
 secondary a.第二的；次要的$0
 secondly ad.第二(点)；其次$0
 secret a.秘密的；隐蔽的$0
@@ -3436,7 +3396,6 @@ sentence n.判决；句子 vt.宣判$0
 separate a.分离的；个别的$0
 separately ad.分离地$0
 separation n.分离，分开；分居$0
-September n.九月$0
 sequence n.连续，继续；次序$0
 series n.连续，系列；丛书$0
 serious a.严肃的；认真的$0
@@ -3475,7 +3434,6 @@ shave vt.剃，刮 vi.修面$0
 she pron.(主格)她$0
 shear vt.剪；剥夺 vi.剪$0
 shed vt.流出；散发；脱落$0
-shed n.棚，小屋；贷棚$0
 sheep n.羊，绵羊$0
 sheet n.被单；纸张；薄板$0
 shelf n.搁板，架子$0
@@ -3595,11 +3553,11 @@ snow n.雪 vi.下雪$0
 snowstorm n.雪暴，暴风雪$0
 snowy a.雪的，下雪的$0
 so ad.这样；这么；非常$0
+so-called a.所谓的，号称的$0
 soak vt.浸，泡 vi.浸泡$0
 soap n.肥皂$0
 sob vi.&n.啜泣，呜咽$0
 sober a.清醒的；适度的$0
-so-called a.所谓的，号称的$0
 soccer n.英式足球$0
 social a.社会的；社交的$0
 socialism n.社会主义$0
@@ -3610,11 +3568,9 @@ soda n.碳酸钠，纯碱；汽水$0
 soft a.软的；柔和的$0
 softly ad.柔软地；温柔地$0
 soil n.泥土，土壤，土地$0
-soil vt.弄脏 vi.变脏$0
 solar a.太阳的，日光的$0
 soldier n.(陆军)士兵，军人$0
 sole n.脚底，鞋底，袜底$0
-sole a.单独的，唯一的$0
 solely ad.单独地，唯一地$0
 solemn a.庄严的；隆重的$0
 solid a.固体的 n.固体$0
@@ -3640,7 +3596,6 @@ sorry a.难过的；对不起的$0
 sort n.种类；类别 vt.整理$0
 soul n.灵魂；精神；人$0
 sound a.健康的；完好的$0
-sound n.声音 vi.响，发声$0
 soup n.汤$0
 sour a.酸的；脾气坏的$0
 source n.河的源头；根源$0
@@ -3648,14 +3603,12 @@ south n.南，南方 a.南方的$0
 southeast n.东南 a.位于东南的$0
 southern a.南方的，南部的$0
 southwest n.西南 a.西南的$0
-Soviet n.苏维埃 a.苏维埃的$0
 sow vt.播(种) vi.播种$0
 space n.空间；场地；空白$0
 spacecraft n.航天器，宇宙飞船$0
 spaceship n.航天飞船$0
 spade n.铲，铁锹$0
 span n.跨距；一段时间$0
-Spanish a.西班牙的n.西班牙人$0
 spare vt.节约 a.多余的$0
 spark n.火花，火星$0
 sparkle vi.发火花 vt.使闪耀$0
@@ -3698,7 +3651,6 @@ spot n.点，斑点；地点$0
 spray n.浪花；喷雾 vt.喷$0
 spread vt.伸开；传播 n.传播$0
 spring vi.跳，跃 n.跳跃；泉$0
-spring n.春天，春季$0
 springtime n.春季，春天$0
 sprinkle n.洒，撒；小雨$0
 spur n.刺激物 vt.刺激$0
@@ -3709,7 +3661,6 @@ squirrel n.松鼠$0
 stab vt.&vi.&n.刺，戳$0
 stability n.稳定，稳定性，巩固$0
 stable a.稳定的，不变的$0
-stable n.厩，马厩，牛棚$0
 stack n.堆，垛 vt.堆积$0
 stadium n.露天大型运动场$0
 staff n.工作人员；参谋$0
@@ -3729,7 +3680,6 @@ start vi.跳起；出发；开始$0
 startle vt.使大吃一惊 n.吃惊$0
 starve vi.饿死 vt.使饿死$0
 state n.状态；国家；州$0
-state vt.陈述，说明，阐明$0
 statement n.陈述，声明$0
 statesman n.政治家，国务活动家$0
 static a.静的；静态的$0
@@ -3796,7 +3746,6 @@ string n.线，细绳；一串$0
 strip vt.剥；夺去 n.条带$0
 stripe n.条纹，条子$0
 stroke n.打，击；鸣声；中风$0
-stroke vt.&n.抚，摩，捋$0
 strong a.强壮的；擅长的$0
 strongly ad.强壮地，强烈地$0
 structural a.结构的，构造的$0
@@ -3843,7 +3792,6 @@ summarize vt.概括，概述，总结$0
 summary n.摘要，概要，一览$0
 summer n.夏，夏季$0
 sun n.太阳，日$0
-Sunday n.星期日，礼拜日$0
 sunlight n.日光，阳光$0
 sunny a.阳光充足的；快活的$0
 sunrise n.日出(时分)$0
@@ -3878,7 +3826,6 @@ suspend vt.吊，悬；推迟$0
 suspicion n.怀疑，疑心，猜疑$0
 sustain vt.支撑；供养；忍受$0
 swallow n.燕子$0
-swallow vt.&vi.吞下，咽下$0
 swamp n.沼泽，沼泽地$0
 swan n.天鹅$0
 swarm n.一大群 vi.密集$0
@@ -3892,7 +3839,6 @@ swell vi.膨胀；隆起；增长$0
 swift a.快的；反应快的$0
 swim vi.游，游泳；眼花$0
 swing vi.摇摆；回转 n.摇摆$0
-Swiss a.瑞士的 n.瑞士人$0
 switch n.开关；转换 vt.转换$0
 sword n.剑，刀$0
 symbol n.象征；符号，记号$0
@@ -3916,7 +3862,6 @@ tame a.驯服的；顺从的$0
 tan n.棕褐色 a.棕黄色的$0
 tank n.坦克；大容器，槽$0
 tap vt.&vi.&n.轻叩$0
-tap n.塞子；龙头 vt.开发$0
 tape n.线带；磁带，录音带$0
 target n.靶，标的；目标$0
 task n.任务，工作，作业$0
@@ -3929,7 +3874,6 @@ teacher n.教师，老师，先生$0
 teaching n.教学，讲授；教导$0
 team n.队，组$0
 tear n.眼泪，泪珠$0
-tear vt.撕开，撕裂$0
 technical a.技术的，工艺的$0
 technician n.技术员，技师$0
 technique n.技术，技巧；技能$0
@@ -3951,12 +3895,10 @@ temptation n.诱惑，引诱$0
 ten num.十，十个$0
 tenant n.承担人，房客，佃户$0
 tend vt.照管，照料，护理$0
-tend vi.走向，趋向；倾向$0
 tendency n.趋向，趋势，倾向$0
 tender a.嫩的；脆弱的$0
 tennis n.网球，网球运动$0
 tense n.时态，时$0
-tense a.拉紧的，绷紧的$0
 tent n.帐篷$0
 tenth num.第十；十分之一$0
 term n.期；学期；条件；词$0
@@ -4022,7 +3964,6 @@ throw vt.投，掷，抛，扔$0
 thrust vt.插，刺 n.插；讽刺$0
 thumb n.(大)拇指$0
 thunder n.雷 vi.打雷 vt.吼出$0
-Thursday n.星期四$0
 thus ad.如此，这样；因而$0
 tick n.滴答声；记号$0
 ticket n.票，券；纲领；传票$0
@@ -4039,14 +3980,12 @@ timid a.胆怯的；羞怯的$0
 tin n.锡；罐头$0
 tiny a.微小的，极小的$0
 tip n.梢，末端，尖，尖端$0
-tip vt.轻击 vi.给小费$0
 tire vi.疲劳，累；厌倦$0
 tired a.疲劳的；厌倦的$0
 tissue n.薄绢；薄纸；组织$0
 title n.标题，题目；称号$0
 to prep.到，向，达到$0
 toast n.烤面包 vt.烘，烤$0
-toast n.祝酒；祝酒词$0
 tobacco n.烟草，烟叶$0
 today ad.在今天；现在$0
 toe n.脚趾，足尖$0
@@ -4143,7 +4082,6 @@ try vt.试；审问 vi.尝试$0
 tub n.桶，盆，浴缸，浴盆$0
 tube n.管；电子管，显像管$0
 tuck vt.折短，卷起；塞$0
-Tuesday n.星期二$0
 tuition n.教，教诲；学费$0
 tumble vi.摔倒，跌倒；打滚$0
 tune n.调子；和谐 vt.调谐$0
@@ -4226,13 +4164,13 @@ unusual a.不平常的；独特的$0
 unusually a.不平常地，非常$0
 unwilling a.不愿意的$0
 up ad.向上；起床，起来$0
+up-to-date a.直到最近的，现代的$0
 upon prep.在…上；在…旁$0
 upper a.上面的；地位较高的$0
 upright a.垂直的；正直的$0
 upset vt.弄翻，打翻，倾覆$0
 upside-down a.颠倒的，乱七八糟的$0
 upstairs ad.在楼上 a.楼上的$0
-up-to-date a.直到最近的，现代的$0
 upward a.向上的，上升的$0
 upwards ad.趋向上升；以上$0
 urge vt.推进；催促 n.冲动$0
@@ -4241,7 +4179,6 @@ us pron.(宾格)我们$0
 usage n.使用，对待；惯用法$0
 use vt.用；耗费 n.用$0
 used vi.过去常常$0
-used a.旧的；习惯于…的$0
 useful a.有用的，有益的$0
 useless a.无用的，无价值的$0
 user n.用户，使用者$0
@@ -4251,7 +4188,6 @@ utility n.效用，有用，实用$0
 utilize vt.利用$0
 utmost a.最远的 n.极限$0
 utter a.完全的，彻底的$0
-utter vt.发出，说，讲$0
 vacant a.空的；未被占用的$0
 vacation n.假期，休假$0
 vacuum n.真空；真空吸尘器$0
@@ -4291,7 +4227,6 @@ via prep.经过；通过$0
 vibrate vt.使颤动 vi.颤动$0
 vibration n.颤动，振动；摆动$0
 vice n.罪恶；恶习；缺点$0
-vice n.(老)虎钳$0
 victim n.牺牲者，受害者$0
 victorious a.胜利的，得胜的$0
 victory n.胜利，战胜$0
@@ -4327,7 +4262,6 @@ voluntary a.自愿的，志愿的$0
 vote n.选举，投票，表决$0
 voyage n.&vi.航海，航空$0
 wage n.工资，报酬$0
-wage vt.开展(运动)$0
 waggon n.四轮运货马车$0
 waist n.腰，腰部$0
 wait vi.等，等候 n.等待$0
@@ -4365,7 +4299,6 @@ weary a.疲倦的 vt.使疲乏$0
 weather n.天气$0
 weave vt.织，编 vi.纺织$0
 wedding n.婚礼$0
-Wednesday n.星期三$0
 weed n.杂草，野草 vi.除草$0
 week n.星期，周$0
 weekday n.周日，工作日$0
@@ -4378,7 +4311,6 @@ welcome int.&n.&vt.欢迎$0
 weld vt.&n.焊接，熔接$0
 welfare n.幸福，福利$0
 well n.井$0
-well ad.好；完全地 int.嘿$0
 well-known a.众所周知的，出名的$0
 west n.西；西洋 a.西方的$0
 western a.西方的，西部的$0
@@ -4424,7 +4356,6 @@ will aux.v.将要，会；愿$0
 willing a.愿意的，心甘情愿的$0
 win vi.获胜，赢 vt.赢得$0
 wind n.风；气息，呼吸$0
-wind vt.绕，缠绕 vi.卷曲$0
 window n.窗子，窗户，窗口$0
 wine n.葡萄酒，果酒$0
 wing n.翼，翅膀，翅$0
@@ -4477,9 +4408,7 @@ write vt.书写；写 vi.写$0
 writer n.作者，作家，文学家$0
 writing n.书写，写；著作$0
 wrong a.错误的 ad.错，不对$0
-X-ray n.X射线，X光$0
 yard n.院子，庭院；场地$0
-yard n.码$0
 yawn vi.打呵欠 n.呵欠$0
 year n.年；年年$0
 yearly a.每年的 ad.一年一度$0

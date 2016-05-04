@@ -3,7 +3,8 @@
 #include <cstdlib>
 #include <ctime>
 
-Dict::Dict(string _filename){
+Dict::Dict(string _filename) : filename(_filename)
+{
 	ifstream file(_filename);
     while(!file.eof()){
         char buf[100];
@@ -18,10 +19,31 @@ Dict::Dict(string _filename){
         string ex = buffer.substr(0,pos);
         buffer.erase(0,pos+1);
 		stringstream ss;
-		ss << buffer;
 		int type;
-		ss >> type;
-		words.insert( Word(name, ex, type) );
+		string t;
+		Word* w;
+        if( (pos = buffer.find('#') ) > -1){
+            t = buffer.substr(0, pos);
+            buffer.erase(0, pos+1);
+			ss << t;
+			ss >> type;
+			w = new Word(name, ex, type);
+
+            while( (pos = buffer.find('#') ) > -1){
+                string s = buffer.substr(0, pos);
+                w->addSentence(s);
+                buffer.erase(0, pos+1);
+            }
+
+            w->addSentence(buffer);
+        }
+        else{
+            t = buffer;
+			ss << t;
+			ss >> type;
+			w = new Word(name, ex, type);
+        }
+		words.insert(*w);
     }
     file.close();
 }
@@ -92,7 +114,7 @@ void Dict::searchWordSe(string _name){
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
-	if(iter != words.end()) {
+	if(iter != words.end() && (*iter).getSentencesSize() > 0) {
 		cout << "Àý¾ä:" << endl;
         for(int i = 0;i < (*iter).getSentencesSize();i++){
 			cout << (*iter).getSentences(i) << endl;
@@ -113,4 +135,68 @@ string Dict::randomWord(int _level){
 			iter++;
 	}
 	return (*iter).getName();
+}
+
+Dict::~Dict(){
+	ofstream fout(filename);
+	set<Word, wordLess>::iterator iter = words.begin();
+	set<Word, wordLess>::iterator eIter = words.end();
+	eIter--;
+	while(iter != eIter){
+		fout << (*iter).getName() << " " << (*iter).getExplain() << "$";
+		fout << (*iter).getLevel();
+        for(int i = 0;i < (*iter).getSentencesSize();i++){
+			fout << "#" << (*iter).getSentences(i);
+		}
+		fout << endl;
+		iter++;
+	}
+	fout << (*eIter).getName() << " " << (*eIter).getExplain() << "$";
+	fout << (*eIter).getLevel();
+    for(int i = 0;i < (*eIter).getSentencesSize();i++){
+		fout << "#" << (*eIter).getSentences(i);
+	}
+	fout.close();
+}
+
+Dict* Cet4::instance = NULL;
+Dict* Cet4::getInstance(){
+	if (instance == NULL){
+		instance = new Dict();
+	}
+	return instance;
+}
+void Cet4::saveInstance(){
+	if(instance != NULL){
+		instance->~Dict();
+		instance = NULL;
+	}
+}
+
+Dict* Cet6::instance = NULL;
+Dict* Cet6::getInstance(){
+	if (instance == NULL){
+		instance = new Dict("data/_cet6.txt");
+	}
+	return instance;
+}
+void Cet6::saveInstance(){
+	if(instance != NULL){
+		instance->~Dict();
+		instance = NULL;
+	}
+}
+
+Dict* Gre::instance = NULL;
+Dict* Gre::getInstance(){
+	if (instance == NULL){
+		instance = new Dict("data/_gre.txt");
+	}
+	return instance;
+}
+void Gre::saveInstance(){
+	if(instance != NULL){
+		instance->~Dict();
+		instance = NULL;
+	}
 }

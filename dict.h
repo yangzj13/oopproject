@@ -19,6 +19,7 @@ struct wordLess
 class Dict
 {
 	set<Word, wordLess> words;
+	string filename;
 public:
 	Dict(string _filename = "data/_cet4.txt");
 	//void addWords(Word _word);
@@ -29,6 +30,37 @@ public:
 	void searchWordSe(string _name); //直接输出单词例句
 	int searchWordLevel(string _name);
     bool setWordLevel(string _name, int _level); //返回是否设置成功
+	~Dict();
+};
+
+class Cet4{
+private:
+	static Dict* instance;
+protected:
+	Cet4(){}
+public:
+	static Dict* getInstance();
+	static void saveInstance(); //保存修改
+};
+
+class Cet6{
+private:
+	static Dict* instance;
+protected:
+	Cet6(){}
+public:
+	static Dict* getInstance();
+	static void saveInstance(); //保存修改
+};
+
+class Gre{
+private:
+	static Dict* instance;
+protected:
+	Gre(){}
+public:
+	static Dict* getInstance();
+	static void saveInstance(); //保存修改
 };
 
 #endif
