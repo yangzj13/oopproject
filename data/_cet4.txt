@@ -1215,7 +1215,7 @@ drift vi.漂流，漂泊 n.漂流$0
 drill n.钻头；操练 vi.钻孔$0
 drink vt.饮 vi.喝 n.饮料$0
 drip vi.滴下；漏水 n.水滴$0
-drive vt.驾驶；打入；驱$0
+drive vt.驾驶；打入；驱$0#drive sb nuts
 driver n.驾驶员，司机$0
 drop vt.使落下；降低$0
 drought n.旱灾，干旱$0

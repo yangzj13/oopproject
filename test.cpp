@@ -1,4 +1,4 @@
-#include "counter.h"
+#include "beidanci.h"
 
 using namespace std;
 
@@ -18,8 +18,8 @@ int main()
 	
 	//Dict dictionary("data/_gre.txt");
 	//Dict dictionary;
-	Counter cc("test.txt");
-	cc.count(*Gre::getInstance());
+/* 	Counter cc("test.txt");
+	cc.count(*Gre::getInstance()); */
 /* 	string name = Cet4::getInstance()->randomWord(0);
 	string name1;
 	char c1[100], c2[100];
@@ -36,6 +36,8 @@ int main()
 /* 	Cet4::getInstance()->searchWordSe(name1);
 	Cet4::saveInstance(); */
 	//cout << dictionary.searchWordLevel(name) << endl;
+	Beidanci b;
+	b.run();
 	
 	return 0;
 }

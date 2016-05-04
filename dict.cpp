@@ -55,7 +55,7 @@ void Dict::searchWordEx(string _name){
 	if(iter != words.end()) {  
         cout << (*iter).getExplain() << endl;
     } else {  
-        cout << "Cannot fine this word!" << endl;  
+        cout << "Cannot find this word!" << endl;  
     }
 }
 
@@ -122,9 +122,9 @@ void Dict::searchWordSe(string _name){
     }
 }
 
-string Dict::randomWord(int _level){
+string Dict::randomWord(int _seed, int _level){
 	srand((unsigned int) time(NULL));
-	int i = rand() * rand() % words.size(); //两次随机
+	int i = rand() * _seed % words.size(); //两次随机
 	set<Word, wordLess>::iterator iter = words.begin();
 	while(i--)
 		iter++;

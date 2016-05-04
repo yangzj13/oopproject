@@ -23,7 +23,7 @@ class Dict
 public:
 	Dict(string _filename = "data/_cet4.txt");
 	//void addWords(Word _word);
-	string randomWord(int _level = 0);
+	string randomWord(int _seed, int _level = 0);
 	void searchWordEx(string _name); //直接输出单词解释
 	void searchWordEx(string _name, int _times);//输出单词解释和次数
 	bool addWordSenten(string _name, string _s); //一次只能加一句
