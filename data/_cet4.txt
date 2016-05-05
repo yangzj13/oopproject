@@ -1849,7 +1849,7 @@ height n.高，高度；高处$0
 heir n.后嗣，继承人$0
 helicopter n.直升机$0
 hell n.地狱；极大的痛苦$0
-hello int.喂$0
+hello int.喂$0#hello my son!
 helmet n.头盔，钢盔$0
 help vt.帮助；援助 n.帮手$0
 helpful a.给予帮助的；有用的$0
@@ -4054,7 +4054,7 @@ treasure n.财富；珍宝 vt.珍视$0
 treat vt.对待；处理 n.款待$0
 treatment n.待遇；治疗，疗法$0
 treaty n.条约；协议，协定$0
-tree n.树$0
+tree n.树$0#I have a little tree.
 tremble vi.发抖，哆嗦；摇动$0
 tremendous a.极大的，非常的$0
 trend vi.伸向；倾向 n.倾向$0

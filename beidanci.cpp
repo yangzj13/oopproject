@@ -1,6 +1,6 @@
 #include "beidanci.h"
 
-Beidanci::Beidanci() : now_dict(CET4)
+Beidanci::Beidanci() : now_dict(CET4), his()
 {
 	dict = Cet4::getInstance();
 }
@@ -150,6 +150,7 @@ void Beidanci::search(){
 	this->printBlankLines(3);
 	cout<<"请输入要查找的单词：";
 	cin >> word;
+	his.updateHistory(word);
 	dict->searchWordEx(word);
 	dict->searchWordSe(word);
 	this->printBlankLines(3);
@@ -167,7 +168,7 @@ void Beidanci::search(){
 void Beidanci::search(string _word){
 	system("cls");
 	this->printBlankLines(3);
-	cout<<"请输入要查找的单词：" << _word;
+	cout<<"请输入要查找的单词：" << _word << endl;;
 	dict->searchWordEx(_word);
 	dict->searchWordSe(_word);
 	this->printBlankLines(3);
@@ -290,11 +291,36 @@ void Beidanci::test(){
 }
 
 void Beidanci::history(){
-	
+	system("cls");
+	this->printBlankLines(3);
+	vector<string> h = his.getHistory();
+	for(int i = 0;i < h.size();i++){
+		cout << i+1 << ". " << h[i] << endl; 
+	}
+	this->printBlankLines(1);
+	cout << "访问第几个单词（输入0返回）： ";
+	while(1){
+		int yourChoice;
+		cin>>yourChoice;
+		if( yourChoice < 0 || 
+			yourChoice > h.size() ){
+				cout<<"输入无效，请重新输入：";
+				continue;
+		}
+		else if(yourChoice != 0){
+			this->search(h[yourChoice-1]);
+			this->history();
+			break;
+		}
+		else{
+			break;
+		}
+	}
 }
 
 void Beidanci::exitB(){
-	exit(0);
+	his.~History();
+	exit(0);	
 }
 
 void Beidanci::save(){
@@ -303,15 +329,30 @@ void Beidanci::save(){
 	cout << "请选择所保存的词典 ： 1.CET4 2.CET6 3.GRE 4.Back" << endl;
 	cout << "你的选择 ： ";
 	int c;
-	cin >> c;
+	while(1){
+		cin >> c;
+		if(c > 0 && c < 5)
+			break;
+		else
+			cout << "请重新输入： ";
+	}
 	if(c == 1)
 		Cet4::saveInstance();
 	else if(c == 2)
 		Cet6::saveInstance();
 	else if(c == 3)
 		Gre::saveInstance();
-	else if(c != 4)
-		this->save();
+	if(c > 0 && c < 4){
+		if(now_dict == 1)
+			dict = Cet4::getInstance();
+		else if(now_dict == 2)
+			dict = Cet6::getInstance();
+		else if(now_dict == 3)
+			dict = Gre::getInstance();
+		this->printBlankLines(3);
+		cout << "保存成功！" << endl;
+		system("pause");
+	}
 }
 
 //控制格式，输出一些空行

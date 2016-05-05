@@ -6,11 +6,13 @@
 #define  GRE 3
 
 #include "counter.h"
-#include <iomanip>
+#include "history.h"
 
 class Beidanci{
 	Dict* dict;
 	int now_dict;
+	History his;
+	
 public:
 	Beidanci();
 	void run();
