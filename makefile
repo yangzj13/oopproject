@@ -1,9 +1,20 @@
-all : test
+objects = test.o dict.o counter.o beidanci.o
 
-test : test.cpp word.h dict.h dict.cpp counter.h counter.cpp beidanci.h beidanci.cpp
-	g++ -o test dict.cpp counter.cpp beidanci.cpp test.cpp -std=c++11
+test : $(objects)
+	g++ -o test $(objects) -std=c++11
 
+test.o : test.cpp beidanci.h counter.h dict.h word.h
+	g++ -c test.cpp -std=c++11
+
+dict.o : dict.cpp dict.h word.h
+	g++ -c dict.cpp -std=c++11
+
+counter.o : counter.cpp counter.h dict.h word.h
+	g++ -c counter.cpp -std=c++11
+
+beidanci.o : beidanci.h beidanci.cpp counter.h dict.h word.h
+	g++ -c beidanci.cpp -std=c++11
+
+.PHONY : clean
 clean : 
-	rm *.out
-	rm *.exe
-
+	del $(objects)
