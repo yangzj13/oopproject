@@ -1,8 +1,7 @@
 #include "beidanci.h"
 
-Beidanci::Beidanci() : now_dict(CET4), his()
+Beidanci::Beidanci() : now_dict(CET4), his(), dict(Cet4::getInstance())
 {
-	dict = Cet4::getInstance();
 }
 
 void Beidanci::run(){
@@ -224,7 +223,10 @@ void Beidanci::test(){
 		//随机生成错误答案
 		for(int j=0;j<4;j++){
 			srand(j);
-			string tmp = dict->randomWord(rand());
+			int seed = rand();
+			srand(i);
+			seed *= rand();
+			string tmp = dict->randomWord(seed);
 			bool repeat=false;
 			//检查是否有重复的情况
 			for(int k=0;k<j;k++){
@@ -320,6 +322,9 @@ void Beidanci::history(){
 
 void Beidanci::exitB(){
 	his.~History();
+	Cet4::saveInstance();
+	Cet6::saveInstance();
+	Gre::saveInstance();
 	exit(0);	
 }
 

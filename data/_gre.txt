@@ -1,4 +1,3 @@
-aviary 大鸟笼，鸟舍$0
 Antarctic 南极的$0
 abandon 放弃；放纵$0
 abase 降低自己，贬抑，使卑下$0
@@ -483,6 +482,7 @@ aver 极力声明；断言；确证$0
 averse 不愿的，反对的$0
 aversion 嫌恶，憎恨$0
 avert 避免，防止；避开$0
+aviary 大鸟笼，鸟舍$0
 avid 渴望的，热心的$0
 avoid 避开，躲避$0
 avow 承认；公开宣称$0

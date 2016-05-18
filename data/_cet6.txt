@@ -1,3 +1,15 @@
+Antarctic a．南极的 n.南极区$0
+Buddhism n．佛教，释教$0
+Christ n．救世主(耶稣基督)$0
+Christian n．基督教徒；信徒 a.基督教的$0
+Egyptian a．埃及的 n.埃及人$0
+Islam n．伊斯兰教，回教$0
+Jesus n．耶稣$0
+Jupiter 木星$0
+Mars n．火星；战争$0
+Moslem n．&a．穆斯林(的)$0
+Saturn n．农神；土星$0
+Venus n．维纳斯；美人；色情$0
 abbreviation n．缩短，缩写$0
 abide v．容忍，忍受$0
 abolish vt．废止, 废除(法律、制度、习俗等)$0
@@ -56,7 +68,6 @@ annual adj.一年一次的，每年的$0
 annually ad.年年，每年$0
 anode n．(电)阳极，正极$0
 answer vt．回答；响应；适应 vi.符合，适合$0
-Antarctic a．南极的 n.南极区$0
 antenna n．触角，无线$0
 antique n．古物, 古董;adj. 古时的, 过时的$0
 anybody prep．任何人 n.重要人物$0
@@ -176,7 +187,6 @@ brightness n．明亮，辉煌，聪明$0
 broaden vt．&vi.放宽，变阔$0
 bronze n．青铜；青铜制品 n．青铜色$0
 brood n．一窝幼鸟 v．孵蛋，闷想$0
-Buddhism n．佛教，释教$0
 budget n．预算，预算案$0
 buffalo n．水牛；水陆坦克$0
 bug n．臭虫，窃听器$0
@@ -191,8 +201,8 @@ burner n．灯头，煤气头$0
 bushel n．蒲式耳(容量单位)$0
 butt v．以头抵撞, 碰撞$0
 buzz vi．(蜂等)嗡嗡叫$0
-bypass v．规避，绕过$0
 by-product n．副产品$0
+bypass v．规避，绕过$0
 cable n．缆，索；电缆；电报 n．海底电报$0
 calculus n．微积分；结石$0
 calibration n．校准；标定，刻度$0
@@ -236,8 +246,6 @@ choice n．选择, 抉择, 精选品, 选择机会, 选择权;adj. 精选$0
 chop n．(用斧头等)砍，(风)突然改变方向$0
 chord n．弦, 和音, 情绪$0
 chorus n．合唱, 合唱队, 齐声$0
-Christ n．救世主(耶稣基督)$0
-Christian n．基督教徒；信徒 a.基督教的$0
 cigar n．雪茄烟，叶卷烟$0
 circular a．圆的；循环的 n.传单，通报，通函$0
 circulation n．循环；(货币等)流通$0
@@ -530,7 +538,6 @@ economically ad.节约地，在经济上$0
 economics n．经济学；经济$0
 edit vt．编辑，编纂；校订$0
 editorial n．社会；重要评论$0
-Egyptian a．埃及的 n.埃及人$0
 eject v．喷出、逐出$0
 elapse v．(光阴)消逝$0
 elbow n．肘，肘部；弯管 vt.用肘挤，挤进$0
@@ -983,7 +990,6 @@ irregularity n．不规则；不整齐$0
 irrespective a．不考虑的，不顾的$0
 irrigation n．灌溉；冲洗法$0
 irritate n．刺激,烦恼,刺激物$0
-Islam n．伊斯兰教，回教$0
 ivory n．象牙；牙质；乳白色$0
 jack n．千斤顶$0
 jam adj． 拥塞$0
@@ -991,7 +997,6 @@ jealousy n．妒忌,猜忌,羡慕$0
 jean n．斜纹布，牛仔裤$0
 jelly n．冻，果子冻；胶状物$0
 jerk n．v．猛然一拉$0
-Jesus n．耶稣$0
 jewellery n．珠宝，珠宝饰物$0
 jingle vt．&vi.(使)丁当响$0
 jog n．轻推,轻撞,漫步$0
@@ -999,7 +1004,6 @@ jug n．水壶, 监牢, [象声] 模仿夜莺的叫声;vt. 放入壶中,$0
 junction n．连接；接头；中继线$0
 jungle n．丛林$0
 junior a．年少的 n.年少者；晚辈$0
-Jupiter 木星$0
 kernel n．果仁、核心$0
 kidnap vt．诱拐，绑架$0
 kidney n．肾，腰子；性格$0
@@ -1086,7 +1090,6 @@ maple n．枫树$0
 margin n．［商］成本与售价的差额,赚头,保证金$0
 marginal adj．书页空白处的，不重要的$0
 market vt．销售；出售$0
-Mars n．火星；战争$0
 marsh n．沼泽,湿地$0
 marshal n．元帅, 典礼官, 执行官, 司仪官;vt. 整顿, 配置, 汇$0
 martyr n．烈士，殉道者$0
@@ -1155,7 +1158,6 @@ moor n．旷野地，荒野 v．使（船）停泊$0
 mop n．墩布，洗碗刷$0
 morality n．道德，美德，品行$0
 mortgage n．抵押贷款，抵押证书v．抵押$0
-Moslem n．&a．穆斯林(的)$0
 mosque n．清真寺$0
 moss n．苔藓，地衣$0
 motel n．汽车游客旅馆$0
@@ -1588,7 +1590,6 @@ satisfaction n．满意；快事；赔偿 n．快事，乐事；愉快$0
 satisfactorily ad.圆满地$0
 satisfactory $0
 saturation n．饱和(状态)；浸透$0
-Saturn n．农神；土星$0
 scan vt．细看,浏览,分析韵律,详细调查,扫描$0
 scandal n．丑闻，恶意诽谤$0
 scar vt．使有疤痕$0
@@ -1697,7 +1698,7 @@ smash vt．打碎，打破，粉碎$0
 smuggle v．走私，私运$0
 snack n．快餐，小吃$0
 snail n．蜗牛；行动缓慢的人$0
-snap vt．猛咬，突然折断$0
+snap vt．猛咬，突然折断$0#test!
 sneer n．冷笑，嘲笑 vt.轻蔑$0
 sneeze vi．打喷嚏$0
 sniff vi．用鼻子吸 vt.嗅$0
@@ -1983,7 +1984,6 @@ velocity n．速度，迅速$0
 velvet n．丝绒，天鹅绒 a.丝绒制的；柔软的$0
 vengeance n．报仇，报复$0
 ventilate vt．使空气流通,使通风,宣布,公开$0
-Venus n．维纳斯；美人；色情$0
 verge v．濒临;n. 边缘$0
 versatile adj．多才多艺的,万用的,万向的$0
 version n．改编形式，改写本；译本$0

@@ -16,7 +16,7 @@ class Word
     int level;
 	vector<string> sentences;
 public:
-    Word(string _name, string _ex, int _l = 0):name(_name),
+    Word(const string& _name, const string& _ex, int _l = 0):name(_name),
                                                explain(_ex),
                                                level(_l){};
     Word(const Word &_src):name(_src.name),
@@ -28,11 +28,11 @@ public:
 		}
 	}
 	~Word(){}
-    string getName() const
+    const string getName() const
     {
         return name;
     }
-    string getExplain() const
+    const string getExplain() const
     {
         return explain;
     }
@@ -44,7 +44,7 @@ public:
 	{
 		level = _l;
 	}
-	void addSentence(string _sentence)
+	void addSentence(const string& _sentence)
 	{
 		sentences.push_back(_sentence);
 	}
@@ -52,7 +52,7 @@ public:
 	{
 		return sentences.size();
 	}
-	string getSentences(int _pos) const
+	const string getSentences(int _pos) const
 	{
 		return sentences[_pos];
 	}

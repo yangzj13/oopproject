@@ -12,10 +12,10 @@ class Counter{
 	
 public:
 	void setWords();
-	Counter(string _filename) :filename(_filename){
+	Counter(const string& _filename) :filename(_filename){
 		setWords();
 	}
-	void count(Dict &_dict);
+	void count(const Dict &_dict);
 };
 
 #endif

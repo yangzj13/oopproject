@@ -21,7 +21,7 @@ public:
 			history_words.push_back(w);
 		}
 	}
-	void updateHistory(string _word){
+	void updateHistory(const string& _word){
 		if(history_words.size() < max_size)
 			history_words.push_back(_word);
 		else{

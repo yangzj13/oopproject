@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 
-Dict::Dict(string _filename) : filename(_filename)
+Dict::Dict(const string& _filename) : filename(_filename)
 {
 	ifstream file(_filename);
     while(!file.eof()){
@@ -48,7 +48,8 @@ Dict::Dict(string _filename) : filename(_filename)
     file.close();
 }
 
-void Dict::searchWordEx(string _name){
+void Dict::searchWordEx(const string& _name) const
+{
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -59,7 +60,8 @@ void Dict::searchWordEx(string _name){
     }
 }
 
-void Dict::searchWordEx(string _name, int _times){
+void Dict::searchWordEx(const string& _name, int _times) const
+{
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -69,7 +71,8 @@ void Dict::searchWordEx(string _name, int _times){
     }
 }
 
-int Dict::searchWordLevel(string _name){
+int Dict::searchWordLevel(const string& _name) const
+{
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -80,7 +83,7 @@ int Dict::searchWordLevel(string _name){
     }
 }
 
-bool Dict::setWordLevel(string _name, int _level){
+bool Dict::setWordLevel(const string& _name, int _level){
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -95,7 +98,7 @@ bool Dict::setWordLevel(string _name, int _level){
     }
 }
 
-bool Dict::addWordSenten(string _name, string _s){
+bool Dict::addWordSenten(const string& _name, const string& _s){
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -110,7 +113,8 @@ bool Dict::addWordSenten(string _name, string _s){
     }
 }
 
-void Dict::searchWordSe(string _name){
+void Dict::searchWordSe(const string& _name) const
+{
 	Word f(_name, "find");
 	set<Word, wordLess>::iterator iter;
 	iter = words.find(f);
@@ -122,9 +126,11 @@ void Dict::searchWordSe(string _name){
     }
 }
 
-string Dict::randomWord(int _seed, int _level){
+const string Dict::randomWord(int _seed, int _level) const{
 	srand((unsigned int) time(NULL));
-	int i = rand() * _seed % words.size(); //两次随机
+	int i = rand();
+	srand(_seed);
+	i = i * rand() % words.size(); //两次随机
 	set<Word, wordLess>::iterator iter = words.begin();
 	while(i--)
 		iter++;
@@ -168,7 +174,7 @@ Dict* Cet4::getInstance(){
 }
 void Cet4::saveInstance(){
 	if(instance != NULL){
-		instance->~Dict();
+		delete instance;
 		instance = NULL;
 	}
 }
@@ -182,7 +188,7 @@ Dict* Cet6::getInstance(){
 }
 void Cet6::saveInstance(){
 	if(instance != NULL){
-		instance->~Dict();
+		delete instance;
 		instance = NULL;
 	}
 }
@@ -196,7 +202,7 @@ Dict* Gre::getInstance(){
 }
 void Gre::saveInstance(){
 	if(instance != NULL){
-		instance->~Dict();
+		delete instance;
 		instance = NULL;
 	}
 }

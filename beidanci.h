@@ -1,22 +1,24 @@
 #ifndef __BEIDANCI_H__
 #define __BEIDANCI_H__
 
-#define CET4 1
-#define CET6 2
-#define  GRE 3
-
 #include "counter.h"
 #include "history.h"
+
+const int CET4 = 1;
+const int CET6 = 2;
+const int GRE  = 3;
 
 class Beidanci{
 	Dict* dict;
 	int now_dict;
 	History his;
+	Beidanci(const Beidanci&);
+	Beidanci& operator=(const Beidanci&);
 	
 public:
 	Beidanci();
 	void run();
-	//
+	///
 	void switchDict();
 	//记忆策略
 	void setPolicy();
