@@ -49,7 +49,7 @@ acarpous 不结果实的$
 accede 同意$
 accelerate 加速；促进$
 accentuate 重读；强调$
-access 通路；途径$
+access 通路；途径$#test access
 accessible 易达到的；易受影响的$
 accessory 附属的，次要的$
 acclaim 欢呼，称赞$

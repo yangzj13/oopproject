@@ -80,7 +80,7 @@ void Dict::searchWordSe(const string& _name)
 	if(searchWord(_name) && (*nowIter).getSentencesSize() > 0) {
 		cout << "Àı¾ä:" << endl;
         for(int i = 0;i < (*nowIter).getSentencesSize();i++){
-			cout << (*nowIter).getSentences(i) << endl;
+			cout << i+1 << ". " << (*nowIter).getSentences(i) << endl;
 		}
     }
 }
@@ -92,6 +92,18 @@ string Dict::randomWord(int _seed){
 	i = i * rand() % words.size(); //Á½´ÎËæ»ú
 	nowIter = words.begin();
 	while(i--)
+		nowIter++;
+	return (*nowIter).getName();
+}
+
+int Dict::dictSize(){
+	return words.size();
+}
+
+string Dict::getWord(int _pos){
+	nowIter = words.begin();
+	_pos = _pos % words.size();
+	while(_pos--)
 		nowIter++;
 	return (*nowIter).getName();
 }

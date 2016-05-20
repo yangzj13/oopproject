@@ -26,6 +26,8 @@ public:
 	//void addWords(Word _word);
 	bool searchWord(const string& _name);
 	string randomWord(int _seed);//生成随机单词
+	int dictSize();//返回词典单词数
+	string getWord(int _pos);//返回特定单词
 	void searchWordEx(const string& _name); //直接输出单词解释
 	void searchWordEx(const string& _name, int _times);//输出单词解释和次数 专门为counter设计
 	void addWordSenten(const string& _name, const string& _s); //一次只能加一句

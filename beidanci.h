@@ -2,21 +2,28 @@
 #define __BEIDANCI_H__
 
 #include "counter.h"
-#include "history.h"
+#include "user.h"
 
 const int CET4 = 1;
 const int CET6 = 2;
 const int GRE  = 3;
 
 class Beidanci{
+	User* user;
 	Dict* dict;
 	int now_dict;
-	History his;
 	Beidanci(const Beidanci&);
 	Beidanci& operator=(const Beidanci&);
+	int number;
+	int times;
+	float uc;
+	float dc;
 	
 public:
 	Beidanci();
+	//登陆
+	bool login();
+	//运行
 	void run();
 	//切换词典 在记忆擦略底下使用
 	void switchDict();
@@ -39,6 +46,7 @@ public:
 	void exitB();
 	//保存修改
 	void save();
+	//打印空行
 	void printBlankLines(int _n);
 };
 

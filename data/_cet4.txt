@@ -97,7 +97,7 @@ accent n.口音，腔调；重音$
 accept vt.vi.接受；同意$
 acceptable a.可接受的，合意的$
 acceptance n.接受，验收；承认$
-access n.接近；通道，入口$
+access n.接近；通道，入口$#access to your house
 accessory n.同谋，从犯；附件$
 accident n.意外的；事故$
 accidental a.偶然的；非本质的$

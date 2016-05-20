@@ -1,4 +1,4 @@
-objects = test.o dict.o counter.o beidanci.o
+objects = test.o dict.o counter.o beidanci.o user.o
 
 test : $(objects)
 	g++ -o test $(objects) -std=c++11
@@ -14,6 +14,8 @@ counter.o : counter.cpp counter.h dict.h word.h
 
 beidanci.o : beidanci.h beidanci.cpp counter.h dict.h word.h
 	g++ -c beidanci.cpp -std=c++11
+user.o : user.h user.cpp dict.h history.h
+	g++ -c user.cpp -std=c++11
 
 .PHONY : clean
 clean : 

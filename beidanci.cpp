@@ -1,7 +1,22 @@
 #include "beidanci.h"
 
-Beidanci::Beidanci() : now_dict(CET4), his(), dict(Cet4::getInstance())
+Beidanci::Beidanci(): user(NULL), dict(Cet4::getInstance()),
+					  now_dict(CET4), number(10), times(0),
+					  uc(0), dc(0)
 {
+}
+
+bool Beidanci::login(){
+	system("cls");
+	this->printBlankLines(5);
+	cout << "What's your name?" << endl;
+	string user_name;
+	cin >> user_name;
+	user = new User(user_name);
+	if(user != NULL)
+		return true;
+	else
+		return false;
 }
 
 void Beidanci::run(){
@@ -33,7 +48,7 @@ void Beidanci::run(){
 
 		cin>>order;
 		//判断输入是否有效
-		 if((order>0) && (order<10))
+		 if((order>-1) && (order<10))
 			 valid=true;
 		 //无效则需要重新输入
 		 else{
@@ -43,7 +58,9 @@ void Beidanci::run(){
 		 }
 		
 		//根据用户输入选择不同功能
-		if(order == 1)
+		if(order == 0)
+			this->switchDict();
+		else if(order == 1)
 			this->search();
 		else if(order == 3)
 			this->setPolicy();
@@ -102,11 +119,89 @@ void Beidanci::switchDict(){
 }
 
 void Beidanci::setPolicy(){
-	
+	system("cls");
+	this->printBlankLines(3);
+	cout << "每次最多记忆单词数量：";
+	while(1){
+		cin >> number;
+		if(number >= 1)
+			break;
+		else
+			cout << "应为正数：";
+	}
+	this->printBlankLines(1);
+	cout << "至少出现次数：";
+	while(1){
+		cin >> times;
+		if(times >= 0)
+			break;
+		else
+			cout << "应为非负数：";
+	}
+	this->printBlankLines(1);
+	cout << "最高正确率：";
+	while(1){
+		cin >> uc;
+		if(uc >= 0 && uc <= 1)
+			break;
+		else
+			cout << "应为0~1：";
+	}
+	this->printBlankLines(1);
+	cout << "最低正确率：";
+	while(1){
+		cin >> dc;
+		if(dc >= 0 && dc <= uc)
+			break;
+		else
+			cout << "应为0~1：";
+	}
+	system("pause");
 }
 
 void Beidanci::study(){
-	
+	vector<string> studyWords = user->getSpecificWords(number, dict,
+													   times, uc, dc);
+	for(int i = 0;i < studyWords.size();i++){
+		system("cls");
+		this->printBlankLines(3);
+		cout << studyWords[i] << endl;
+		cout << "Do you know it? 1.Yes 2.No" << endl;
+		int op;
+		while(1){
+			cin >> op;
+			if(op == 1){
+				user->updateWordList(studyWords[i], true);
+				break;
+			}
+			if(op == 2){
+				user->updateWordList(studyWords[i], false);
+				break;
+			}
+			cout << "重新输入(1或2)：";
+		}
+		dict->searchWordEx(studyWords[i]);
+		dict->searchWordSe(studyWords[i]);
+		this->printBlankLines(3);
+		cout << "1.继续 2.返回:";
+		while(1){
+			cin >> op;
+			if(op == 1){
+				break;
+			}
+			if(op == 2){
+				i = studyWords.size();
+				cout << "返回" << endl;
+				break;
+			}
+			cout << "重新输入(1或2)：";
+		}
+	}
+	if(studyWords.size() == 0){
+		system("cls");
+		cout << "No mathched word!" << endl;
+	}
+	system("pause");
 }
 
 void Beidanci::count(){
@@ -124,8 +219,6 @@ void Beidanci::addSe(const string& _word){
 	system("cls");
 	this->printBlankLines(3);
 	cout << "待添加例句的新单词为：" << _word << endl;
-/* 	dict->searchWordEx(_word);
-	dict->searchWordSe(_word); */
 	Dict* nowDict = NULL;
 	cout << "选择添加例句的词库： 1.CET4 2.CET6 3.GRE" << endl;
 	cout << "其中可用的有：";
@@ -154,6 +247,7 @@ void Beidanci::addSe(const string& _word){
 			nowDict = Gre::getInstance();
 			break;
 		}
+		cout << "重新选择，你的选择：";
 	}
 	this->printBlankLines(3);
 	string s;
@@ -171,7 +265,7 @@ void Beidanci::search(){
 	this->printBlankLines(3);
 	cout<<"请输入要查找的单词：";
 	cin >> word;
-	his.updateHistory(word);
+	user->updateHistory(word);
 	//在三个不同词库中都进行单词查询
 	bool isExist = false;
 	if(Cet4::getInstance()->searchWord(word)){
@@ -322,8 +416,12 @@ void Beidanci::test(){
 			}
 			else{
 				//答案正确
-				if(yourAns[0] == (ans+'A'))
+				if(yourAns[0] == (ans+'A')){
 					score+=5;
+					user->updateWordList(words[i],true);
+				}
+				else
+					user->updateWordList(words[i],false);
 				break;
 			}
 		}//结束while循环
@@ -341,7 +439,7 @@ void Beidanci::test(){
 		cout<<"您得了"<<score<<"分， 非常优秀，加油！"<<endl;
 	}
 	else if(score==100){
-		cout<<"您得了满分100！ 膜拜神牛！"<<endl;
+		cout<<"您得了满分100！"<<endl;
 	}
 	cout<<endl<<"下面是所有正确答案:"<<endl;
 	for(int i=0;i<20;i++){
@@ -355,7 +453,7 @@ void Beidanci::test(){
 void Beidanci::history(){
 	system("cls");
 	this->printBlankLines(3);
-	vector<string> h = his.getHistory();
+	vector<string> h = user->getHistory();
 	for(int i = 0;i < h.size();i++){
 		cout << i+1 << ". " << h[i] << endl; 
 	}
@@ -381,7 +479,7 @@ void Beidanci::history(){
 }
 
 void Beidanci::exitB(){
-	his.~History();
+	delete user;
 	Cet4::saveInstance();
 	Cet6::saveInstance();
 	Gre::saveInstance();
