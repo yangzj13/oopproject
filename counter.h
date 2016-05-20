@@ -15,7 +15,7 @@ public:
 	Counter(const string& _filename) :filename(_filename){
 		setWords();
 	}
-	void count(const Dict &_dict);
+	void count(Dict &_dict);
 };
 
 #endif

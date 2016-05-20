@@ -20,16 +20,16 @@ class Dict
 {
 	set<Word, wordLess> words;
 	string filename;
+	set<Word, wordLess>::iterator nowIter;
 public:
 	Dict(const string& _filename = "data/_cet4.txt");
 	//void addWords(Word _word);
-	const string randomWord(int _seed, int _level = 0) const;
-	void searchWordEx(const string& _name) const; //直接输出单词解释
-	void searchWordEx(const string& _name, int _times) const;//输出单词解释和次数
-	bool addWordSenten(const string& _name, const string& _s); //一次只能加一句
-	void searchWordSe(const string& _name) const; //直接输出单词例句
-	int searchWordLevel(const string& _name) const;
-    bool setWordLevel(const string& _name, int _level); //返回是否设置成功
+	bool searchWord(const string& _name);
+	string randomWord(int _seed);//生成随机单词
+	void searchWordEx(const string& _name); //直接输出单词解释
+	void searchWordEx(const string& _name, int _times);//输出单词解释和次数 专门为counter设计
+	void addWordSenten(const string& _name, const string& _s); //一次只能加一句
+	void searchWordSe(const string& _name); //直接输出单词例句
 	~Dict();
 };
 

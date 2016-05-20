@@ -3,13 +3,12 @@
 #include <cstdlib>
 #include <ctime>
 
-Dict::Dict(const string& _filename) : filename(_filename)
+Dict::Dict(const string& _filename) : filename(_filename), nowIter()
 {
 	ifstream file(_filename);
     while(!file.eof()){
-        char buf[100];
-        file.getline(buf, 100);
-        string buffer(buf);
+        string buffer;
+        getline(file, buffer);
         int pos = buffer.find(' ');
         //获取单词
         string name = buffer.substr(0, pos);
@@ -18,16 +17,10 @@ Dict::Dict(const string& _filename) : filename(_filename)
 		pos = buffer.find("$");
         string ex = buffer.substr(0,pos);
         buffer.erase(0,pos+1);
-		stringstream ss;
-		int type;
-		string t;
 		Word* w;
         if( (pos = buffer.find('#') ) > -1){
-            t = buffer.substr(0, pos);
             buffer.erase(0, pos+1);
-			ss << t;
-			ss >> type;
-			w = new Word(name, ex, type);
+			w = new Word(name, ex);
 
             while( (pos = buffer.find('#') ) > -1){
                 string s = buffer.substr(0, pos);
@@ -38,127 +31,85 @@ Dict::Dict(const string& _filename) : filename(_filename)
             w->addSentence(buffer);
         }
         else{
-            t = buffer;
-			ss << t;
-			ss >> type;
-			w = new Word(name, ex, type);
+			w = new Word(name, ex);
         }
 		words.insert(*w);
     }
+	nowIter = words.end();
     file.close();
 }
 
-void Dict::searchWordEx(const string& _name) const
-{
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end()) {  
-        cout << (*iter).getExplain() << endl;
-    } else {  
-        cout << "Cannot find this word!" << endl;  
+bool Dict::searchWord(const string& _name){
+	if(nowIter != words.end() && (*nowIter).getName() == _name) //如果查之前就已经是了就不再查了
+		return true;
+	else{
+		Word f(_name, "find");
+		nowIter = words.find(f);
+		if(nowIter != words.end())
+			return true;
+		else
+			return false;
+	}
+}
+
+void Dict::searchWordEx(const string& _name){
+	if(searchWord(_name)){  
+        cout << (*nowIter).getExplain() << endl;
     }
 }
 
-void Dict::searchWordEx(const string& _name, int _times) const
+void Dict::searchWordEx(const string& _name, int _times)
 {
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end()) {  
-        cout << _name << " " << (*iter).getExplain()
+	if(searchWord(_name)) {  
+        cout << _name << " " << (*nowIter).getExplain()
 		 << " " << _times << endl;
     }
 }
 
-int Dict::searchWordLevel(const string& _name) const
-{
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end()) {  
-        return (*iter).getLevel();
-    } else {  
-        return -1;  
-    }
-}
-
-bool Dict::setWordLevel(const string& _name, int _level){
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end()) {
-        Word tmp(*iter);
-		words.erase(iter);
-		tmp.setLevel(_level);
-		words.insert(tmp);
-		return true;
-    } else {
-        return false;
-    }
-}
-
-bool Dict::addWordSenten(const string& _name, const string& _s){
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end()) {
-        Word tmp(*iter);
-		words.erase(iter);
+void Dict::addWordSenten(const string& _name, const string& _s){
+	if(searchWord(_name)) {
+        Word tmp(*nowIter);
+		words.erase(nowIter++);
 		tmp.addSentence(_s);
 		words.insert(tmp);
-		return true;
-    } else {
-        return false;
     }
 }
 
-void Dict::searchWordSe(const string& _name) const
+void Dict::searchWordSe(const string& _name)
 {
-	Word f(_name, "find");
-	set<Word, wordLess>::iterator iter;
-	iter = words.find(f);
-	if(iter != words.end() && (*iter).getSentencesSize() > 0) {
+	if(searchWord(_name) && (*nowIter).getSentencesSize() > 0) {
 		cout << "例句:" << endl;
-        for(int i = 0;i < (*iter).getSentencesSize();i++){
-			cout << (*iter).getSentences(i) << endl;
+        for(int i = 0;i < (*nowIter).getSentencesSize();i++){
+			cout << (*nowIter).getSentences(i) << endl;
 		}
     }
 }
 
-const string Dict::randomWord(int _seed, int _level) const{
+string Dict::randomWord(int _seed){
 	srand((unsigned int) time(NULL));
 	int i = rand();
 	srand(_seed);
 	i = i * rand() % words.size(); //两次随机
-	set<Word, wordLess>::iterator iter = words.begin();
+	nowIter = words.begin();
 	while(i--)
-		iter++;
-	while((*iter).getLevel() != _level){
-		iter = words.begin();
-		i = rand() * rand() % words.size();
-		while(i--)
-			iter++;
-	}
-	return (*iter).getName();
+		nowIter++;
+	return (*nowIter).getName();
 }
 
 Dict::~Dict(){
 	ofstream fout(filename);
-	set<Word, wordLess>::iterator iter = words.begin();
+	nowIter = words.begin();
 	set<Word, wordLess>::iterator eIter = words.end();
 	eIter--;
-	while(iter != eIter){
-		fout << (*iter).getName() << " " << (*iter).getExplain() << "$";
-		fout << (*iter).getLevel();
-        for(int i = 0;i < (*iter).getSentencesSize();i++){
-			fout << "#" << (*iter).getSentences(i);
+	while(nowIter != eIter){
+		fout << (*nowIter).getName() << " " << (*nowIter).getExplain() << "$";
+        for(int i = 0;i < (*nowIter).getSentencesSize();i++){
+			fout << "#" << (*nowIter).getSentences(i);
 		}
 		fout << endl;
-		iter++;
+		nowIter++;
 	}
 	fout << (*eIter).getName() << " " << (*eIter).getExplain() << "$";
-	fout << (*eIter).getLevel();
     for(int i = 0;i < (*eIter).getSentencesSize();i++){
 		fout << "#" << (*eIter).getSentences(i);
 	}

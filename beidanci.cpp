@@ -13,11 +13,11 @@ void Beidanci::run(){
 	while(1){
 		system("cls");
 		this->printBlankLines(5);
-		cout<<"********************************轻松背单词************************************"<<endl;
+		cout<<"*******************************背单词小能手***********************************"<<endl;
 		this->printBlankLines(5);
 		cout<<"                                0.词典切换                                     "<<endl;
 		cout<<"                                1.查询单词                                     "<<endl;
-		cout<<"                                2.添加例句                                     "<<endl;
+		//cout<<"                                2.添加例句                                     "<<endl;
 		cout<<"                                3.记忆策略                                     "<<endl;
 		cout<<"                                4.学习单词                                     "<<endl;
 		cout<<"                                5.生词统计                                     "<<endl;
@@ -33,7 +33,7 @@ void Beidanci::run(){
 
 		cin>>order;
 		//判断输入是否有效
-		 if((order>-1) && (order<10))
+		 if((order>0) && (order<10))
 			 valid=true;
 		 //无效则需要重新输入
 		 else{
@@ -43,12 +43,8 @@ void Beidanci::run(){
 		 }
 		
 		//根据用户输入选择不同功能
-		if(order == 0)
-			this->switchDict();
-		else if(order == 1)
-			this->search();		
-		//else if(order == 2)
-			//this->addSe();
+		if(order == 1)
+			this->search();
 		else if(order == 3)
 			this->setPolicy();
 		else if(order == 4)
@@ -124,22 +120,48 @@ void Beidanci::count(){
 	system("pause");
 }
 
-void Beidanci::addSe(string _word){
+void Beidanci::addSe(const string& _word){
 	system("cls");
 	this->printBlankLines(3);
 	cout << "待添加例句的新单词为：" << _word << endl;
-	dict->searchWordEx(_word);
-	dict->searchWordSe(_word);
+/* 	dict->searchWordEx(_word);
+	dict->searchWordSe(_word); */
+	Dict* nowDict = NULL;
+	cout << "选择添加例句的词库： 1.CET4 2.CET6 3.GRE" << endl;
+	cout << "其中可用的有：";
+	if(Cet4::getInstance()->searchWord(_word)){
+		cout << " CET4";
+	}
+	if(Cet6::getInstance()->searchWord(_word)){
+		cout << " CET6";
+	}
+	if(Gre::getInstance()->searchWord(_word)){
+		cout << " GRE";
+	}
+	cout << endl << "你的选择：";
+	while(1){
+		int op = -1;
+		cin >> op;
+		if(op == 1 && Cet4::getInstance()->searchWord(_word)){
+			nowDict = Cet4::getInstance();
+			break;
+		}
+		else if(op == 2 && Cet6::getInstance()->searchWord(_word)){
+			nowDict = Cet6::getInstance();
+			break;
+		}
+		else if(op == 3 && Gre::getInstance()->searchWord(_word)){
+			nowDict = Gre::getInstance();
+			break;
+		}
+	}
 	this->printBlankLines(3);
 	string s;
 	cout << "添加的例句为： ";
 	cin.get(); 
 	getline(cin, s);
-	if(dict->addWordSenten(_word, s)){
-		cout << "添加成功!" << endl;
-	}
-	else
-		cout << "添加失败!" << endl;
+	nowDict->addWordSenten(_word, s);
+	cout << "添加成功!" << endl;
 	system("pause");
 }
 
@@ -150,28 +172,66 @@ void Beidanci::search(){
 	cout<<"请输入要查找的单词：";
 	cin >> word;
 	his.updateHistory(word);
-	dict->searchWordEx(word);
-	dict->searchWordSe(word);
-	this->printBlankLines(3);
-	cout<<"继续查词输入1，添加例句输入2，其余键返回：";
+	//在三个不同词库中都进行单词查询
+	bool isExist = false;
+	if(Cet4::getInstance()->searchWord(word)){
+		cout << "CET4:" << endl;
+		Cet4::getInstance()->searchWordEx(word);
+		Cet4::getInstance()->searchWordSe(word);
+		isExist = true;
+	}
+	if(Cet6::getInstance()->searchWord(word)){
+		cout << "CET6:" << endl;
+		Cet6::getInstance()->searchWordEx(word);
+		Cet6::getInstance()->searchWordSe(word);
+		isExist = true;
+	}
+	if(Gre::getInstance()->searchWord(word)){
+		cout << "GRE:" << endl;
+		Gre::getInstance()->searchWordEx(word);
+		Gre::getInstance()->searchWordSe(word);
+		isExist = true;
+	}
+	if(isExist == false)
+		cout << "Can't find this word!" << endl;
+	cout<<"继续查词输入1，添加例句输入2(若存在)，其余键返回：";
 	char c;
 	cin >> c;
 	if(c == '1')
 		this->search();
-	else if(c == '2'){
+	else if(c == '2' && isExist){
 		this->addSe(word);		
 		this->search(word);
 	}
 }
 
-void Beidanci::search(string _word){
+void Beidanci::search(const string& _word){
 	system("cls");
 	this->printBlankLines(3);
 	cout<<"请输入要查找的单词：" << _word << endl;;
-	dict->searchWordEx(_word);
-	dict->searchWordSe(_word);
-	this->printBlankLines(3);
-	cout<<"继续查词输入1，添加例句输入2，其余键返回：";
+	//在三个不同词库中都进行单词查询
+	bool isExist = false;
+	if(Cet4::getInstance()->searchWord(_word)){
+		cout << "CET4:" << endl;
+		Cet4::getInstance()->searchWordEx(_word);
+		Cet4::getInstance()->searchWordSe(_word);
+		isExist = true;
+	}
+	if(Cet6::getInstance()->searchWord(_word)){
+		cout << "CET6:" << endl;
+		Cet6::getInstance()->searchWordEx(_word);
+		Cet6::getInstance()->searchWordSe(_word);
+		isExist = true;
+	}
+	if(Gre::getInstance()->searchWord(_word)){
+		cout << "Gre:" << endl;
+		Gre::getInstance()->searchWordEx(_word);
+		Gre::getInstance()->searchWordSe(_word);
+		isExist = true;
+	}
+	if(isExist == false)
+		cout << "Can't find this word!" << endl;
+	cout<<"继续查词输入1，添加例句输入2(若存在)，其余键返回：";
 	char c;
 	cin >> c;
 	if(c == '1')

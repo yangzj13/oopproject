@@ -18,7 +18,7 @@ class Beidanci{
 public:
 	Beidanci();
 	void run();
-	///
+	//切换词典 在记忆擦略底下使用
 	void switchDict();
 	//记忆策略
 	void setPolicy();
@@ -27,10 +27,10 @@ public:
 	//生词统计
 	void count();
 	//添加例句
-	void addSe(string _word);
+	void addSe(const string& _word);
 	//查询单词 
 	void search();
-	void search(string _word);
+	void search(const string& _word);
 	//单词测试
 	void test();
 	//查询历史

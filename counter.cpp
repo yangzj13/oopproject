@@ -26,7 +26,7 @@ void Counter::setWords(){
 	fin.close();
 }
 
-void Counter::count(const Dict &_dict){
+void Counter::count(Dict &_dict){
 	string now = words[0];
 	int count = 0;
 	for(int i = 0;i < words.size();i++){

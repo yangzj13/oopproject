@@ -37,7 +37,9 @@ int main()
 	Cet4::saveInstance(); */
 	//cout << dictionary.searchWordLevel(name) << endl;
 	Beidanci b;
+/* 	while(login() ){
+		b.run();
+	} */
 	b.run();
-	
 	return 0;
 }
