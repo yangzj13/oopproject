@@ -90,7 +90,7 @@ vector<string> User::getSpecificWords(int _size, Dict* _dict,
 		else{
 			b[r++] = true;
 			r = r % size;
-			if(r == r0 + size)
+			if(r == r0)
 				break;
 		}
 	}
