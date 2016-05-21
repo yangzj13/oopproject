@@ -3,6 +3,7 @@
 
 #include "counter.h"
 #include "user.h"
+#include "command.h"
 
 const int CET4 = 1;
 const int CET6 = 2;
@@ -11,6 +12,7 @@ const int GRE  = 3;
 class Beidanci{
 	User* user;
 	Dict* dict;
+	Command* command;
 	int now_dict;
 	Beidanci(const Beidanci&);
 	Beidanci& operator=(const Beidanci&);
@@ -20,7 +22,7 @@ class Beidanci{
 	float dc;
 	
 public:
-	Beidanci();
+	Beidanci(Command* _command);
 	//登陆
 	bool login();
 	//运行
@@ -48,6 +50,10 @@ public:
 	void save();
 	//打印空行
 	void printBlankLines(int _n);
+	//清理屏幕
+	void cls();
+	//暂停
+	void pause();
 };
 
 #endif

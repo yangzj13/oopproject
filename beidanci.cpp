@@ -1,13 +1,13 @@
 #include "beidanci.h"
 
-Beidanci::Beidanci(): user(NULL), dict(Cet4::getInstance()),
-					  now_dict(CET4), number(10), times(0),
-					  uc(0), dc(0)
+Beidanci::Beidanci(Command* _command): user(NULL), dict(Cet4::getInstance()), 
+					  command(_command), now_dict(CET4), number(10), 
+					  times(0), uc(0), dc(0)
 {
 }
 
 bool Beidanci::login(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(5);
 	cout << "What's your name?" << endl;
 	string user_name;
@@ -26,7 +26,7 @@ void Beidanci::run(){
 	
 	//循环执行
 	while(1){
-		system("cls");
+		this->cls();
 		this->printBlankLines(5);
 		cout<<"*******************************背单词小能手***********************************"<<endl;
 		this->printBlankLines(5);
@@ -53,7 +53,7 @@ void Beidanci::run(){
 		 //无效则需要重新输入
 		 else{
 			 valid=false;
-			 system("cls");
+			 this->cls();
 			 continue;
 		 }
 		
@@ -80,7 +80,7 @@ void Beidanci::run(){
 }
 
 void Beidanci::switchDict(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout << "当前字典为";
 	switch (now_dict){
@@ -109,17 +109,17 @@ void Beidanci::switchDict(){
 			dict = Gre::getInstance();
 		this->printBlankLines(3);
 		cout << "切换成功" << endl;
-		system("pause");
+		this->pause();
 	}
 	else{
 		this->printBlankLines(3);
 		cout << "切换失败" << endl;
-		system("pause");
+		this->pause();
 	}
 }
 
 void Beidanci::setPolicy(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout << "每次最多记忆单词数量：";
 	while(1){
@@ -156,14 +156,14 @@ void Beidanci::setPolicy(){
 		else
 			cout << "应为0~1：";
 	}
-	system("pause");
+	this->pause();
 }
 
 void Beidanci::study(){
 	vector<string> studyWords = user->getSpecificWords(number, dict,
 													   times, uc, dc);
 	for(int i = 0;i < studyWords.size();i++){
-		system("cls");
+		this->cls();
 		this->printBlankLines(3);
 		cout << studyWords[i] << endl;
 		cout << "Do you know it? 1.Yes 2.No" << endl;
@@ -199,25 +199,25 @@ void Beidanci::study(){
 		}
 	}
 	if(studyWords.size() == 0){
-		system("cls");
+		this->cls();
 		cout << "No mathched word!" << endl;
 	}
-	system("pause");
+	this->pause();
 }
 
 void Beidanci::count(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout << "请输入生词统计文本的名称（请将文本放置于当前文件夹下）：";
 	string filename;
 	cin >> filename;
 	Counter counter(filename);
 	counter.count(*dict);
-	system("pause");
+	this->pause();
 }
 
 void Beidanci::addSe(const string& _word){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout << "待添加例句的新单词为：" << _word << endl;
 	Dict* nowDict = NULL;
@@ -257,12 +257,12 @@ void Beidanci::addSe(const string& _word){
 	getline(cin, s);
 	nowDict->addWordSenten(_word, s);
 	cout << "添加成功!" << endl;
-	system("pause");
+	this->pause();
 }
 
 void Beidanci::search(){
 	string word;
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout<<"请输入要查找的单词：";
 	cin >> word;
@@ -301,7 +301,7 @@ void Beidanci::search(){
 }
 
 void Beidanci::search(const string& _word){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout<<"请输入要查找的单词：" << _word << endl;;
 	//在三个不同词库中都进行单词查询
@@ -338,7 +338,7 @@ void Beidanci::search(const string& _word){
 }
 
 void Beidanci::test(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout<<"********************************考试说明************************************"<<endl;
 	this->printBlankLines(3);
@@ -346,8 +346,8 @@ void Beidanci::test(){
 		<<endl;
 	cout<<"                                Good Luck!                                  "<<endl;
 	this->printBlankLines(10);
-	system("pause");
-	//system("cls");
+	this->pause();
+	//this->cls();
 
 	//存放单词
 	vector<string> words;
@@ -372,7 +372,7 @@ void Beidanci::test(){
 	score=0;
 	//开始考试
 	for(int i=0;i<20;i++){
-		system("cls");
+		this->cls();
 		this->printBlankLines(1);
 		vector<string> meaning;
 		//随机生成错误答案
@@ -428,7 +428,7 @@ void Beidanci::test(){
 		}//结束while循环
 	}// 结束for循环
 
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	if(score < 60){				
 		cout<<"您只得了"<<score<<"分><, 尚需努力！"<<endl;		
@@ -447,12 +447,12 @@ void Beidanci::test(){
 		cout<<i+1<<": "<<words[i]<<" ";
 		dict->searchWordEx(words[i]);
 	}
-	system("pause");
+	this->pause();
 	return;
 }
 
 void Beidanci::history(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	vector<string> h = user->getHistory();
 	for(int i = 0;i < h.size();i++){
@@ -481,6 +481,7 @@ void Beidanci::history(){
 
 void Beidanci::exitB(){
 	delete user;
+	delete command;
 	Cet4::saveInstance();
 	Cet6::saveInstance();
 	Gre::saveInstance();
@@ -488,7 +489,7 @@ void Beidanci::exitB(){
 }
 
 void Beidanci::save(){
-	system("cls");
+	this->cls();
 	this->printBlankLines(3);
 	cout << "请选择所保存的词典 ： 1.CET4 2.CET6 3.GRE 4.Back" << endl;
 	cout << "你的选择 ： ";
@@ -515,7 +516,7 @@ void Beidanci::save(){
 			dict = Gre::getInstance();
 		this->printBlankLines(3);
 		cout << "保存成功！" << endl;
-		system("pause");
+		this->pause();
 	}
 }
 
@@ -525,4 +526,12 @@ void Beidanci::printBlankLines(int _n){
 	for(int i=0;i<_n;i++)
 		cout<<endl;
 	return;
+}
+
+void Beidanci::cls(){
+	command->cleanScreen();
+}
+
+void Beidanci::pause(){
+	command->pause();
 }
