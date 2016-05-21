@@ -45,5 +45,5 @@ void Counter::count(Dict &_dict){
 		_dict.searchWordEx(now, count);
 	}
 	else
-		cout << "æ‰“å¼€å¤±è´¥ï¼" << endl;
+		cout << "´ò¿ªÊ§°Ü£¡" << endl;
 }

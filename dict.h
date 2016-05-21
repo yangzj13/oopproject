@@ -25,13 +25,13 @@ public:
 	Dict(const string& _filename = "data/_cet4.txt");
 	//void addWords(Word _word);
 	bool searchWord(const string& _name);
-	string randomWord(int _seed);//ç”Ÿæˆéšæœºå•è¯
-	int dictSize();//è¿”å›è¯å…¸å•è¯æ•°
-	string getWord(int _pos);//è¿”å›ç‰¹å®šå•è¯
-	void searchWordEx(const string& _name); //ç›´æ¥è¾“å‡ºå•è¯è§£é‡Š
-	void searchWordEx(const string& _name, int _times);//è¾“å‡ºå•è¯è§£é‡Šå’Œæ¬¡æ•° ä¸“é—¨ä¸ºcounterè®¾è®¡
-	void addWordSenten(const string& _name, const string& _s); //ä¸€æ¬¡åªèƒ½åŠ ä¸€å¥
-	void searchWordSe(const string& _name); //ç›´æ¥è¾“å‡ºå•è¯ä¾‹å¥
+	string randomWord(int _seed);//Éú³ÉËæ»úµ¥´Ê
+	int dictSize();//·µ»Ø´Êµäµ¥´ÊÊı
+	string getWord(int _pos);//·µ»ØÌØ¶¨µ¥´Ê
+	void searchWordEx(const string& _name); //Ö±½ÓÊä³öµ¥´Ê½âÊÍ
+	void searchWordEx(const string& _name, int _times);//Êä³öµ¥´Ê½âÊÍºÍ´ÎÊı ×¨ÃÅÎªcounterÉè¼Æ
+	void addWordSenten(const string& _name, const string& _s); //Ò»´ÎÖ»ÄÜ¼ÓÒ»¾ä
+	void searchWordSe(const string& _name); //Ö±½ÓÊä³öµ¥´ÊÀı¾ä
 	~Dict();
 };
 
@@ -42,7 +42,7 @@ protected:
 	Cet4(){}
 public:
 	static Dict* getInstance();
-	static void saveInstance(); //ä¿å­˜ä¿®æ”¹
+	static void saveInstance(); //±£´æĞŞ¸Ä
 };
 
 class Cet6{
@@ -52,7 +52,7 @@ protected:
 	Cet6(){}
 public:
 	static Dict* getInstance();
-	static void saveInstance(); //ä¿å­˜ä¿®æ”¹
+	static void saveInstance(); //±£´æĞŞ¸Ä
 };
 
 class Gre{
@@ -62,7 +62,7 @@ protected:
 	Gre(){}
 public:
 	static Dict* getInstance();
-	static void saveInstance(); //ä¿å­˜ä¿®æ”¹
+	static void saveInstance(); //±£´æĞŞ¸Ä
 };
 
 #endif

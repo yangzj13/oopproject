@@ -2,7 +2,7 @@
 
 void linux_pause(){
 	getchar();
-	cout << "å›è½¦ç»§ç»­..." << endl;
+	cout << "»Ø³µ¼ÌĞø..." << endl;
 	getchar();
 }
 
@@ -32,42 +32,42 @@ bool Beidanci::login(){
 void Beidanci::run(){
 	int order;
 	bool valid = true;
-	//system("title èƒŒå•è¯å°èƒ½æ‰‹");
+	//system("title ±³µ¥´ÊĞ¡ÄÜÊÖ");
 	
-	//å¾ªç¯æ‰§è¡Œ
+	//Ñ­»·Ö´ĞĞ
 	while(1){
 		linux_cls();
 		this->printBlankLines(5);
-		cout<<"*******************************èƒŒå•è¯å°èƒ½æ‰‹***********************************"<<endl;
+		cout<<"*******************************±³µ¥´ÊĞ¡ÄÜÊÖ***********************************"<<endl;
 		this->printBlankLines(5);
-		cout<<"                                0.è¯å…¸åˆ‡æ¢                                     "<<endl;
-		cout<<"                                1.æŸ¥è¯¢å•è¯                                     "<<endl;
-		//cout<<"                                2.æ·»åŠ ä¾‹å¥                                     "<<endl;
-		cout<<"                                3.è®°å¿†ç­–ç•¥                                     "<<endl;
-		cout<<"                                4.å­¦ä¹ å•è¯                                     "<<endl;
-		cout<<"                                5.ç”Ÿè¯ç»Ÿè®¡                                     "<<endl;
-		cout<<"                                6.å•è¯æµ‹è¯•                                     "<<endl;
-		cout<<"                                7.æŸ¥è¯¢å†å²                                     "<<endl;
-		cout<<"                                8.ä¿å­˜ä¿®æ”¹                                     "<<endl;
-		cout<<"                                9.é€€å‡ºç³»ç»Ÿ                                     "<<endl;
+		cout<<"                                0.´ÊµäÇĞ»»                                     "<<endl;
+		cout<<"                                1.²éÑ¯µ¥´Ê                                     "<<endl;
+		//cout<<"                                2.Ìí¼ÓÀı¾ä                                     "<<endl;
+		cout<<"                                3.¼ÇÒä²ßÂÔ                                     "<<endl;
+		cout<<"                                4.Ñ§Ï°µ¥´Ê                                     "<<endl;
+		cout<<"                                5.Éú´ÊÍ³¼Æ                                     "<<endl;
+		cout<<"                                6.µ¥´Ê²âÊÔ                                     "<<endl;
+		cout<<"                                7.²éÑ¯ÀúÊ·                                     "<<endl;
+		cout<<"                                8.±£´æĞŞ¸Ä                                     "<<endl;
+		cout<<"                                9.ÍË³öÏµÍ³                                     "<<endl;
 		this->printBlankLines(2);
-		//åˆ¤æ–­ä¸Šæ¬¡è¾“å…¥æ˜¯å¦æœ‰æ•ˆ
+		//ÅĞ¶ÏÉÏ´ÎÊäÈëÊÇ·ñÓĞĞ§
 		if(valid == true)
-			cout<<"è¯·è¾“å…¥æ‚¨çš„é€‰æ‹©ï¼š";
-		else cout<<"è¾“å…¥æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
+			cout<<"ÇëÊäÈëÄúµÄÑ¡Ôñ£º";
+		else cout<<"ÊäÈëÎŞĞ§£¬ÇëÖØĞÂÊäÈë£º";
 
 		cin>>order;
-		//åˆ¤æ–­è¾“å…¥æ˜¯å¦æœ‰æ•ˆ
+		//ÅĞ¶ÏÊäÈëÊÇ·ñÓĞĞ§
 		 if((order>-1) && (order<10))
 			 valid=true;
-		 //æ— æ•ˆåˆ™éœ€è¦é‡æ–°è¾“å…¥
+		 //ÎŞĞ§ÔòĞèÒªÖØĞÂÊäÈë
 		 else{
 			 valid=false;
 			 linux_cls();
 			 continue;
 		 }
 		
-		//æ ¹æ®ç”¨æˆ·è¾“å…¥é€‰æ‹©ä¸åŒåŠŸèƒ½
+		//¸ù¾İÓÃ»§ÊäÈëÑ¡Ôñ²»Í¬¹¦ÄÜ
 		if(order == 0)
 			this->switchDict();
 		else if(order == 1)
@@ -92,7 +92,7 @@ void Beidanci::run(){
 void Beidanci::switchDict(){
 	linux_cls();
 	this->printBlankLines(3);
-	cout << "å½“å‰å­—å…¸ä¸º";
+	cout << "µ±Ç°×ÖµäÎª";
 	switch (now_dict){
 		case CET4:
 			cout << "CET4" << endl;
@@ -106,7 +106,7 @@ void Beidanci::switchDict(){
 	}
 	this->printBlankLines(3);
 	cout << "1.CET4 2.CET6 3.GRE" << endl;
-	cout << "è¯·è¾“å…¥è¦åˆ‡æ¢çš„è¯å…¸ï¼š";
+	cout << "ÇëÊäÈëÒªÇĞ»»µÄ´Êµä£º";
 	int op;
 	cin >> op;
 	if(op > 0&&op < 4){
@@ -118,12 +118,12 @@ void Beidanci::switchDict(){
 		else if(now_dict == 3)
 			dict = Gre::getInstance();
 		this->printBlankLines(3);
-		cout << "åˆ‡æ¢æˆåŠŸ" << endl;
+		cout << "ÇĞ»»³É¹¦" << endl;
 		linux_pause();
 	}
 	else{
 		this->printBlankLines(3);
-		cout << "åˆ‡æ¢å¤±è´¥" << endl;
+		cout << "ÇĞ»»Ê§°Ü" << endl;
 		linux_pause();
 	}
 }
@@ -131,40 +131,40 @@ void Beidanci::switchDict(){
 void Beidanci::setPolicy(){
 	linux_cls();
 	this->printBlankLines(3);
-	cout << "æ¯æ¬¡æœ€å¤šè®°å¿†å•è¯æ•°é‡ï¼š";
+	cout << "Ã¿´Î×î¶à¼ÇÒäµ¥´ÊÊıÁ¿£º";
 	while(1){
 		cin >> number;
 		if(number >= 1)
 			break;
 		else
-			cout << "åº”ä¸ºæ­£æ•°ï¼š";
+			cout << "Ó¦ÎªÕıÊı£º";
 	}
 	this->printBlankLines(1);
-	cout << "è‡³å°‘å‡ºç°æ¬¡æ•°ï¼š";
+	cout << "ÖÁÉÙ³öÏÖ´ÎÊı£º";
 	while(1){
 		cin >> times;
 		if(times >= 0)
 			break;
 		else
-			cout << "åº”ä¸ºéè´Ÿæ•°ï¼š";
+			cout << "Ó¦Îª·Ç¸ºÊı£º";
 	}
 	this->printBlankLines(1);
-	cout << "æœ€é«˜æ­£ç¡®ç‡ï¼š";
+	cout << "×î¸ßÕıÈ·ÂÊ£º";
 	while(1){
 		cin >> uc;
 		if(uc >= 0 && uc <= 1)
 			break;
 		else
-			cout << "åº”ä¸º0~1ï¼š";
+			cout << "Ó¦Îª0~1£º";
 	}
 	this->printBlankLines(1);
-	cout << "æœ€ä½æ­£ç¡®ç‡ï¼š";
+	cout << "×îµÍÕıÈ·ÂÊ£º";
 	while(1){
 		cin >> dc;
 		if(dc >= 0 && dc <= uc)
 			break;
 		else
-			cout << "åº”ä¸º0~1ï¼š";
+			cout << "Ó¦Îª0~1£º";
 	}
 	linux_pause();
 }
@@ -188,13 +188,13 @@ void Beidanci::study(){
 				user->updateWordList(studyWords[i], false);
 				break;
 			}
-			cout << "é‡æ–°è¾“å…¥(1æˆ–2)ï¼š";
+			cout << "ÖØĞÂÊäÈë(1»ò2)£º";
 		}
 		this->printBlankLines(3);
 		dict->searchWordEx(studyWords[i]);
 		dict->searchWordSe(studyWords[i]);
 		this->printBlankLines(3);
-		cout << "1.ç»§ç»­ 2.è¿”å›:";
+		cout << "1.¼ÌĞø 2.·µ»Ø:";
 		while(1){
 			cin >> op;
 			if(op == 1){
@@ -202,10 +202,10 @@ void Beidanci::study(){
 			}
 			if(op == 2){
 				i = studyWords.size();
-				cout << "è¿”å›" << endl;
+				cout << "·µ»Ø" << endl;
 				break;
 			}
-			cout << "é‡æ–°è¾“å…¥(1æˆ–2)ï¼š";
+			cout << "ÖØĞÂÊäÈë(1»ò2)£º";
 		}
 	}
 	if(studyWords.size() == 0){
@@ -218,7 +218,7 @@ void Beidanci::study(){
 void Beidanci::count(){
 	linux_cls();
 	this->printBlankLines(3);
-	cout << "è¯·è¾“å…¥ç”Ÿè¯ç»Ÿè®¡æ–‡æœ¬çš„åç§°ï¼ˆè¯·å°†æ–‡æœ¬æ”¾ç½®äºå½“å‰æ–‡ä»¶å¤¹ä¸‹ï¼‰ï¼š";
+	cout << "ÇëÊäÈëÉú´ÊÍ³¼ÆÎÄ±¾µÄÃû³Æ£¨Çë½«ÎÄ±¾·ÅÖÃÓÚµ±Ç°ÎÄ¼ş¼ĞÏÂ£©£º";
 	string filename;
 	cin >> filename;
 	Counter counter(filename);
@@ -229,10 +229,10 @@ void Beidanci::count(){
 void Beidanci::addSe(const string& _word){
 	linux_cls();
 	this->printBlankLines(3);
-	cout << "å¾…æ·»åŠ ä¾‹å¥çš„æ–°å•è¯ä¸ºï¼š" << _word << endl;
+	cout << "´ıÌí¼ÓÀı¾äµÄĞÂµ¥´ÊÎª£º" << _word << endl;
 	Dict* nowDict = NULL;
-	cout << "é€‰æ‹©æ·»åŠ ä¾‹å¥çš„è¯åº“ï¼š 1.CET4 2.CET6 3.GRE" << endl;
-	cout << "å…¶ä¸­å¯ç”¨çš„æœ‰ï¼š";
+	cout << "Ñ¡ÔñÌí¼ÓÀı¾äµÄ´Ê¿â£º 1.CET4 2.CET6 3.GRE" << endl;
+	cout << "ÆäÖĞ¿ÉÓÃµÄÓĞ£º";
 	if(Cet4::getInstance()->searchWord(_word)){
 		cout << " CET4";
 	}
@@ -242,7 +242,7 @@ void Beidanci::addSe(const string& _word){
 	if(Gre::getInstance()->searchWord(_word)){
 		cout << " GRE";
 	}
-	cout << endl << "ä½ çš„é€‰æ‹©ï¼š";
+	cout << endl << "ÄãµÄÑ¡Ôñ£º";
 	while(1){
 		int op = -1;
 		cin >> op;
@@ -258,15 +258,15 @@ void Beidanci::addSe(const string& _word){
 			nowDict = Gre::getInstance();
 			break;
 		}
-		cout << "é‡æ–°é€‰æ‹©ï¼Œä½ çš„é€‰æ‹©ï¼š";
+		cout << "ÖØĞÂÑ¡Ôñ£¬ÄãµÄÑ¡Ôñ£º";
 	}
 	this->printBlankLines(3);
 	string s;
-	cout << "æ·»åŠ çš„ä¾‹å¥ä¸ºï¼š ";
+	cout << "Ìí¼ÓµÄÀı¾äÎª£º ";
 	cin.get(); 
 	getline(cin, s);
 	nowDict->addWordSenten(_word, s);
-	cout << "æ·»åŠ æˆåŠŸ!" << endl;
+	cout << "Ìí¼Ó³É¹¦!" << endl;
 	linux_pause();
 }
 
@@ -274,10 +274,10 @@ void Beidanci::search(){
 	string word;
 	linux_cls();
 	this->printBlankLines(3);
-	cout<<"è¯·è¾“å…¥è¦æŸ¥æ‰¾çš„å•è¯ï¼š";
+	cout<<"ÇëÊäÈëÒª²éÕÒµÄµ¥´Ê£º";
 	cin >> word;
 	user->updateHistory(word);
-	//åœ¨ä¸‰ä¸ªä¸åŒè¯åº“ä¸­éƒ½è¿›è¡Œå•è¯æŸ¥è¯¢
+	//ÔÚÈı¸ö²»Í¬´Ê¿âÖĞ¶¼½øĞĞµ¥´Ê²éÑ¯
 	bool isExist = false;
 	if(Cet4::getInstance()->searchWord(word)){
 		cout << "CET4:" << endl;
@@ -299,7 +299,7 @@ void Beidanci::search(){
 	}
 	if(isExist == false)
 		cout << "Can't find this word!" << endl;
-	cout<<"ç»§ç»­æŸ¥è¯è¾“å…¥1ï¼Œæ·»åŠ ä¾‹å¥è¾“å…¥2(è‹¥å­˜åœ¨)ï¼Œå…¶ä½™é”®è¿”å›ï¼š";
+	cout<<"¼ÌĞø²é´ÊÊäÈë1£¬Ìí¼ÓÀı¾äÊäÈë2(Èô´æÔÚ)£¬ÆäÓà¼ü·µ»Ø£º";
 	char c;
 	cin >> c;
 	if(c == '1')
@@ -313,8 +313,8 @@ void Beidanci::search(){
 void Beidanci::search(const string& _word){
 	linux_cls();
 	this->printBlankLines(3);
-	cout<<"è¯·è¾“å…¥è¦æŸ¥æ‰¾çš„å•è¯ï¼š" << _word << endl;;
-	//åœ¨ä¸‰ä¸ªä¸åŒè¯åº“ä¸­éƒ½è¿›è¡Œå•è¯æŸ¥è¯¢
+	cout<<"ÇëÊäÈëÒª²éÕÒµÄµ¥´Ê£º" << _word << endl;;
+	//ÔÚÈı¸ö²»Í¬´Ê¿âÖĞ¶¼½øĞĞµ¥´Ê²éÑ¯
 	bool isExist = false;
 	if(Cet4::getInstance()->searchWord(_word)){
 		cout << "CET4:" << endl;
@@ -336,7 +336,7 @@ void Beidanci::search(const string& _word){
 	}
 	if(isExist == false)
 		cout << "Can't find this word!" << endl;
-	cout<<"ç»§ç»­æŸ¥è¯è¾“å…¥1ï¼Œæ·»åŠ ä¾‹å¥è¾“å…¥2(è‹¥å­˜åœ¨)ï¼Œå…¶ä½™é”®è¿”å›ï¼š";
+	cout<<"¼ÌĞø²é´ÊÊäÈë1£¬Ìí¼ÓÀı¾äÊäÈë2(Èô´æÔÚ)£¬ÆäÓà¼ü·µ»Ø£º";
 	char c;
 	cin >> c;
 	if(c == '1')
@@ -350,25 +350,25 @@ void Beidanci::search(const string& _word){
 void Beidanci::test(){
 	linux_cls();
 	this->printBlankLines(3);
-	cout<<"********************************è€ƒè¯•è¯´æ˜************************************"<<endl;
+	cout<<"********************************¿¼ÊÔËµÃ÷************************************"<<endl;
 	this->printBlankLines(3);
-	cout<<"  æœ¬è€ƒè¯•å…±æœ‰20é¢˜ï¼Œå…¨éƒ¨ä¸ºé€‰æ‹©é¢˜ï¼Œæ¯é¢˜5åˆ†ã€‚é€‰æ‹©ä½ è®¤ä¸ºæ­£ç¡®çš„ç­”æ¡ˆå¹¶è¾“å…¥ï¼Œå›è½¦ç¡®è®¤ä¹‹åå³å¯è¿›å…¥ä¸‹ä¸€é¢˜"
+	cout<<"  ±¾¿¼ÊÔ¹²ÓĞ20Ìâ£¬È«²¿ÎªÑ¡ÔñÌâ£¬Ã¿Ìâ5·Ö¡£Ñ¡ÔñÄãÈÏÎªÕıÈ·µÄ´ğ°¸²¢ÊäÈë£¬»Ø³µÈ·ÈÏÖ®ºó¼´¿É½øÈëÏÂÒ»Ìâ"
 		<<endl;
 	cout<<"                                Good Luck!                                  "<<endl;
 	this->printBlankLines(10);
 	linux_pause();
 	//system("cls");
 
-	//å­˜æ”¾å•è¯
+	//´æ·Åµ¥´Ê
 	vector<string> words;
-	//è®°å½•å¾—åˆ†
+	//¼ÇÂ¼µÃ·Ö
 	int score;
-	//éšæœºé€‰å–20ä¸ªå•è¯
+	//Ëæ»úÑ¡È¡20¸öµ¥´Ê
 	for(int i=0;i<20;i++){
 		srand(i);
 		string r_word = dict->randomWord(rand());
 		bool repeat=false;
-		//æ£€æŸ¥éšæœºç”Ÿæˆçš„å•è¯æ˜¯å¦é‡å¤
+		//¼ì²éËæ»úÉú³ÉµÄµ¥´ÊÊÇ·ñÖØ¸´
 		for(int j=0;j<i;j++){
 			if(words[j] == r_word)
 				repeat = true;
@@ -380,12 +380,12 @@ void Beidanci::test(){
 	}
 
 	score=0;
-	//å¼€å§‹è€ƒè¯•
+	//¿ªÊ¼¿¼ÊÔ
 	for(int i=0;i<20;i++){
 		linux_cls();
 		this->printBlankLines(1);
 		vector<string> meaning;
-		//éšæœºç”Ÿæˆé”™è¯¯ç­”æ¡ˆ
+		//Ëæ»úÉú³É´íÎó´ğ°¸
 		for(int j=0;j<4;j++){
 			srand(j);
 			int seed = rand();
@@ -393,7 +393,7 @@ void Beidanci::test(){
 			seed *= rand();
 			string tmp = dict->randomWord(seed);
 			bool repeat=false;
-			//æ£€æŸ¥æ˜¯å¦æœ‰é‡å¤çš„æƒ…å†µ
+			//¼ì²éÊÇ·ñÓĞÖØ¸´µÄÇé¿ö
 			for(int k=0;k<j;k++){
 				if(meaning[k] == tmp)
 					repeat=true;
@@ -403,30 +403,30 @@ void Beidanci::test(){
 			else 
 				meaning.push_back(tmp);
 		}
-		//ç”Ÿæˆæ­£ç¡®ç­”æ¡ˆ
+		//Éú³ÉÕıÈ·´ğ°¸
 		int ans=rand()%4;
 		meaning[ans]=words[i];
-		cout<<"ç¬¬"<<(i+1)<<"é¢˜ï¼š"<<endl<<endl;
-		cout<<"å•è¯"<<words[i]<<"çš„æ„æ€ä¸ä¸‹åˆ—é‚£ä¸ªé€‰é¡¹ç¬¦åˆï¼Ÿ"<<endl;
+		cout<<"µÚ"<<(i+1)<<"Ìâ£º"<<endl<<endl;
+		cout<<"µ¥´Ê"<<words[i]<<"µÄÒâË¼ÓëÏÂÁĞÄÇ¸öÑ¡Ïî·ûºÏ£¿"<<endl;
 		this->printBlankLines(2);
 		for(int j=0;j<4;j++){
 			cout<<(char)(j+'A')<<"  ";
 			dict->searchWordEx(meaning[j]);
 		}
 		this->printBlankLines(8);
-		cout<<"è¯·è¾“å…¥ä½ çš„ç­”æ¡ˆï¼š";
+		cout<<"ÇëÊäÈëÄãµÄ´ğ°¸£º";
 		while(1){
 			string yourAns;
 			cin>>yourAns;
-			//è¾“å…¥çš„ç­”æ¡ˆæ— æ•ˆ
+			//ÊäÈëµÄ´ğ°¸ÎŞĞ§
 			if( (yourAns.size()!=1) || 
 				(yourAns!="A" && yourAns!="B" 
 				&& yourAns!="C" && yourAns!="D")){
-					cout<<"è¾“å…¥æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
+					cout<<"ÊäÈëÎŞĞ§£¬ÇëÖØĞÂÊäÈë£º";
 					continue;
 			}
 			else{
-				//ç­”æ¡ˆæ­£ç¡®
+				//´ğ°¸ÕıÈ·
 				if(yourAns[0] == (ans+'A')){
 					score+=5;
 					user->updateWordList(words[i],true);
@@ -435,24 +435,24 @@ void Beidanci::test(){
 					user->updateWordList(words[i],false);
 				break;
 			}
-		}//ç»“æŸwhileå¾ªç¯
-	}// ç»“æŸforå¾ªç¯
+		}//½áÊøwhileÑ­»·
+	}// ½áÊøforÑ­»·
 
 	linux_cls();
 	this->printBlankLines(3);
 	if(score < 60){				
-		cout<<"æ‚¨åªå¾—äº†"<<score<<"åˆ†><, å°šéœ€åŠªåŠ›ï¼"<<endl;		
+		cout<<"ÄúÖ»µÃÁË"<<score<<"·Ö><, ÉĞĞèÅ¬Á¦£¡"<<endl;		
 	}
 	else if((score>=60) && (score<85)){
-		cout<<"æ‚¨å¾—äº†"<<score<<"åˆ†ï¼Œ åŠæ ¼é¢‡æœ‰ä½™ï¼Œä¼˜ç§€å°šä¸è¶³ï¼ŒåŠ æ²¹ï¼"<<endl;
+		cout<<"ÄúµÃÁË"<<score<<"·Ö£¬ ¼°¸ñÆÄÓĞÓà£¬ÓÅĞãÉĞ²»×ã£¬¼ÓÓÍ£¡"<<endl;
 	}
 	else if((score>=85) && (score<100)){
-		cout<<"æ‚¨å¾—äº†"<<score<<"åˆ†ï¼Œ éå¸¸ä¼˜ç§€ï¼ŒåŠ æ²¹ï¼"<<endl;
+		cout<<"ÄúµÃÁË"<<score<<"·Ö£¬ ·Ç³£ÓÅĞã£¬¼ÓÓÍ£¡"<<endl;
 	}
 	else if(score==100){
-		cout<<"æ‚¨å¾—äº†æ»¡åˆ†100ï¼"<<endl;
+		cout<<"ÄúµÃÁËÂú·Ö100£¡"<<endl;
 	}
-	cout<<endl<<"ä¸‹é¢æ˜¯æ‰€æœ‰æ­£ç¡®ç­”æ¡ˆ:"<<endl;
+	cout<<endl<<"ÏÂÃæÊÇËùÓĞÕıÈ·´ğ°¸:"<<endl;
 	for(int i=0;i<20;i++){
 		cout<<i+1<<": "<<words[i]<<" ";
 		dict->searchWordEx(words[i]);
@@ -469,13 +469,13 @@ void Beidanci::history(){
 		cout << i+1 << ". " << h[i] << endl; 
 	}
 	this->printBlankLines(1);
-	cout << "è®¿é—®ç¬¬å‡ ä¸ªå•è¯ï¼ˆè¾“å…¥0è¿”å›ï¼‰ï¼š ";
+	cout << "·ÃÎÊµÚ¼¸¸öµ¥´Ê£¨ÊäÈë0·µ»Ø£©£º ";
 	while(1){
 		int yourChoice;
 		cin>>yourChoice;
 		if( yourChoice < 0 || 
 			yourChoice > h.size() ){
-				cout<<"è¾“å…¥æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
+				cout<<"ÊäÈëÎŞĞ§£¬ÇëÖØĞÂÊäÈë£º";
 				continue;
 		}
 		else if(yourChoice != 0){
@@ -500,15 +500,15 @@ void Beidanci::exitB(){
 void Beidanci::save(){
 	linux_cls();
 	this->printBlankLines(3);
-	cout << "è¯·é€‰æ‹©æ‰€ä¿å­˜çš„è¯å…¸ ï¼š 1.CET4 2.CET6 3.GRE 4.Back" << endl;
-	cout << "ä½ çš„é€‰æ‹© ï¼š ";
+	cout << "ÇëÑ¡ÔñËù±£´æµÄ´Êµä £º 1.CET4 2.CET6 3.GRE 4.Back" << endl;
+	cout << "ÄãµÄÑ¡Ôñ £º ";
 	int c;
 	while(1){
 		cin >> c;
 		if(c > 0 && c < 5)
 			break;
 		else
-			cout << "è¯·é‡æ–°è¾“å…¥ï¼š ";
+			cout << "ÇëÖØĞÂÊäÈë£º ";
 	}
 	if(c == 1)
 		Cet4::saveInstance();
@@ -524,14 +524,14 @@ void Beidanci::save(){
 		else if(now_dict == 3)
 			dict = Gre::getInstance();
 		this->printBlankLines(3);
-		cout << "ä¿å­˜æˆåŠŸï¼" << endl;
+		cout << "±£´æ³É¹¦£¡" << endl;
 		linux_pause();
 	}
 }
 
-//æ§åˆ¶æ ¼å¼ï¼Œè¾“å‡ºä¸€äº›ç©ºè¡Œ
+//¿ØÖÆ¸ñÊ½£¬Êä³öÒ»Ğ©¿ÕĞĞ
 void Beidanci::printBlankLines(int _n){
-	//è¾“å‡ºç©ºè¡Œ
+	//Êä³ö¿ÕĞĞ
 	for(int i=0;i<_n;i++)
 		cout<<endl;
 	return;

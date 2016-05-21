@@ -21,32 +21,32 @@ class Beidanci{
 	
 public:
 	Beidanci();
-	//ç™»é™†
+	//µÇÂ½
 	bool login();
-	//è¿è¡Œ
+	//ÔËĞĞ
 	void run();
-	//åˆ‡æ¢è¯å…¸ åœ¨è®°å¿†æ“¦ç•¥åº•ä¸‹ä½¿ç”¨
+	//ÇĞ»»´Êµä ÔÚ¼ÇÒä²ÁÂÔµ×ÏÂÊ¹ÓÃ
 	void switchDict();
-	//è®°å¿†ç­–ç•¥
+	//¼ÇÒä²ßÂÔ
 	void setPolicy();
-	//å­¦ä¹ å•è¯
+	//Ñ§Ï°µ¥´Ê
 	void study();
-	//ç”Ÿè¯ç»Ÿè®¡
+	//Éú´ÊÍ³¼Æ
 	void count();
-	//æ·»åŠ ä¾‹å¥
+	//Ìí¼ÓÀı¾ä
 	void addSe(const string& _word);
-	//æŸ¥è¯¢å•è¯ 
+	//²éÑ¯µ¥´Ê 
 	void search();
 	void search(const string& _word);
-	//å•è¯æµ‹è¯•
+	//µ¥´Ê²âÊÔ
 	void test();
-	//æŸ¥è¯¢å†å²
+	//²éÑ¯ÀúÊ·
 	void history();
-	//é€€å‡ºç³»ç»Ÿ 
+	//ÍË³öÏµÍ³ 
 	void exitB();
-	//ä¿å­˜ä¿®æ”¹
+	//±£´æĞŞ¸Ä
 	void save();
-	//æ‰“å°ç©ºè¡Œ
+	//´òÓ¡¿ÕĞĞ
 	void printBlankLines(int _n);
 };
 

@@ -5,7 +5,7 @@ User::User(const string& _user): user_name(_user),
 {
 	ifstream fin("user_data/"+_user+"_list.txt");
 	if(fin.good()){
-		fin.get();//å»ç©ºè¡Œ
+		fin.get();//È¥¿ÕĞĞ
 		string w;
 		int t;
 		int correct;

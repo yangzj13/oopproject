@@ -20,7 +20,7 @@ public:
 		ifstream fin(file_name);
 		if(fin.good()){
 			string w;
-			fin.get();//绌虹殑鍘嗗彶鏂囦欢涔熸槸浼氭湁涓�琛岀殑锛屾墍浠ヨ姣忎釜鏂囦欢鐨勭涓�琛岄兘涓虹┖琛屾潵瑙ｅ喅杩欎釜闂
+			fin.get();//空的历史文件也是会有一行的，所以让每个文件的第一行都为空行来解决这个问题
 			while(!fin.eof()){
 				fin >> w;
 				history_words.push_back(w);

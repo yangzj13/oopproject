@@ -7,3 +7,7 @@ unique
 china
 China
 access
+assess
+word
+1
+exit
