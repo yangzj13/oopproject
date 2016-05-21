@@ -9,10 +9,12 @@ using namespace std;
 class Counter{
 	vector<string> words;
 	string filename;
+	bool is_valid;
 	
 public:
 	void setWords();
-	Counter(const string& _filename) :filename(_filename){
+	Counter(const string& _filename) :filename(_filename), is_valid(false)
+	{
 		setWords();
 	}
 	void count(Dict &_dict);

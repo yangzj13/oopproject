@@ -10,9 +10,9 @@ Dict::Dict(const string& _filename) : filename(_filename), nowIter()
         string buffer;
         getline(file, buffer);
         int pos = buffer.find(' ');
-        //»ñÈ¡µ¥´Ê
+        //è·å–å•è¯
         string name = buffer.substr(0, pos);
-        //²ÁÈ¥µ¥´Ê
+        //æ“¦å»å•è¯
         buffer.erase(0, pos+1);
 		pos = buffer.find("$");
         string ex = buffer.substr(0,pos);
@@ -40,7 +40,7 @@ Dict::Dict(const string& _filename) : filename(_filename), nowIter()
 }
 
 bool Dict::searchWord(const string& _name){
-	if(nowIter != words.end() && (*nowIter).getName() == _name) //Èç¹û²éÖ®Ç°¾ÍÒÑ¾­ÊÇÁË¾Í²»ÔÙ²éÁË
+	if(nowIter != words.end() && (*nowIter).getName() == _name) //å¦‚æœæŸ¥ä¹‹å‰å°±å·²ç»æ˜¯äº†å°±ä¸å†æŸ¥äº†
 		return true;
 	else{
 		Word f(_name, "find");
@@ -78,7 +78,7 @@ void Dict::addWordSenten(const string& _name, const string& _s){
 void Dict::searchWordSe(const string& _name)
 {
 	if(searchWord(_name) && (*nowIter).getSentencesSize() > 0) {
-		cout << "Àı¾ä:" << endl;
+		cout << "ä¾‹å¥:" << endl;
         for(int i = 0;i < (*nowIter).getSentencesSize();i++){
 			cout << i+1 << ". " << (*nowIter).getSentences(i) << endl;
 		}
@@ -89,7 +89,7 @@ string Dict::randomWord(int _seed){
 	srand((unsigned int) time(NULL));
 	int i = rand();
 	srand(_seed);
-	i = i * rand() % words.size(); //Á½´ÎËæ»ú
+	i = i * rand() % words.size(); //ä¸¤æ¬¡éšæœº
 	nowIter = words.begin();
 	while(i--)
 		nowIter++;
