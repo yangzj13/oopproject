@@ -13,6 +13,7 @@ class Beidanci{
 	User* user;
 	Dict* dict;
 	Command* command;
+	Strategy* strategy;
 	int now_dict;
 	Beidanci(const Beidanci&);
 	Beidanci& operator=(const Beidanci&);
@@ -21,16 +22,10 @@ class Beidanci{
 	float uc;
 	float dc;
 	
-public:
-	Beidanci(Command* _command);
-	//登陆
-	bool login();
-	//运行
-	void run();
 	//切换词典 在记忆擦略底下使用
 	void switchDict();
 	//记忆策略
-	void setPolicy();
+	void setStrategy();
 	//学习单词
 	void study();
 	//生词统计
@@ -54,6 +49,13 @@ public:
 	void cls();
 	//暂停
 	void pause();
+	
+public:
+	Beidanci(Command* _command);
+	//登陆
+	bool login();
+	//运行
+	void run();
 };
 
 #endif

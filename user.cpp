@@ -20,23 +20,19 @@ User::User(const string& _user): user_name(_user),
 	fin.close();
 }
 
-bool User::isYourWord(const string& _word, int _times,
-					  float _ucorrect, float _dcorrect)
+bool User::isYourWord(const string& _word, Strategy* _s)
 {
 	vector<string>::iterator iter = find(own_word_list.begin(),
 									 own_word_list.end(),
 									 _word);
 	int t = 0;
-	float c = 0;
+	int c = 0;
 	if(iter != own_word_list.end()){
 		int pos = iter - own_word_list.begin();
 		t = times[pos];
-		c = (float)correct_times[pos] / (float)times[pos];
+		c = correct_times[pos];
 	}
-	if(t >= _times && c >= _dcorrect && c <= _ucorrect)
-		return true;
-	else
-		return false;
+	return _s->judge(_word, t, c);
 }
 
 vector<string> User::getHistory(){
@@ -66,24 +62,23 @@ void User::updateWordList(const string& _word, bool _correct){
 	}
 }
 
-vector<string> User::getSpecificWords(int _size, Dict* _dict,
-									  int _times, float _ucorrect,
-									  float _dcorrect)
+vector<string> User::getSpecificWords(Strategy* _s, Dict* _dict)
 {
 	int size = _dict->dictSize();
+	int _size = _s->getSize();
 	vector<string> ws;
 	bool* b = new bool[size];
 	for(int i = 0;i < size;i++)
 		b[i] = false;
-	srand(_size);
+	srand(_size*(unsigned int) time(NULL));
 	int r = rand() % size;
 	int r0 = r;	
 	while(_size){
-		if(!b[r] && isYourWord(_dict->getWord(r),_times,_ucorrect,_dcorrect)){
+		if(!b[r] && isYourWord(_dict->getWord(r), _s)){
 			b[r] = true;
 			ws.push_back(_dict->getWord(r));
 			_size--;
-			srand(_size);
+			srand(_size*(unsigned int) time(NULL));
 			r = rand() % size;
 			r0 = r;
 		}

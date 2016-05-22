@@ -1,7 +1,8 @@
 #include "beidanci.h"
 
 Beidanci::Beidanci(Command* _command): user(NULL), dict(Cet4::getInstance()), 
-					  command(_command), now_dict(CET4), number(10), 
+					  command(_command), strategy(new defaultStrategy(10)),
+					  now_dict(CET4), number(10), 
 					  times(0), uc(0), dc(0)
 {
 }
@@ -63,7 +64,7 @@ void Beidanci::run(){
 		else if(order == 1)
 			this->search();
 		else if(order == 3)
-			this->setPolicy();
+			this->setStrategy();
 		else if(order == 4)
 			this->study();
 		else if(order == 5)
@@ -118,54 +119,66 @@ void Beidanci::switchDict(){
 	}
 }
 
-void Beidanci::setPolicy(){
+void Beidanci::setStrategy(){
 	this->cls();
 	this->printBlankLines(3);
-	cout << "每次最多记忆单词数量：";
-	while(1){
-		cin >> number;
-		if(number >= 1)
-			break;
-		else
-			cout << "应为正数：";
-	}
+	cout << "当前每次记忆单词数: " << strategy->getSize() << endl;
+	cout << "当前记忆策略为：";
+	strategy->showStrategy();
+	this->printBlankLines(2);
+	cout << "每次记忆单词数：";
+	int number;
+	cin >> number;
+	this->printBlankLines(2);
+	cout << "策略1   默认策略(无差别选取单词)" << endl;
+	cout << "策略2             选取未记忆单词" << endl;
+	cout << "策略3             选取熟悉的单词" << endl;
+	cout << "策略4 选取较长的单词和易错的单词" << endl;
+	cout << "策略5     选取见过但未背熟的单词" << endl;
 	this->printBlankLines(1);
-	cout << "至少出现次数：";
+	cout << "你的选择是：";
+	bool is_valid = true;
 	while(1){
-		cin >> times;
-		if(times >= 0)
+		if(!is_valid)
+			cout << "请重新输入：";
+		int op;
+		cin >> op;
+		if(op < 1 || op > 5){
+			is_valid = false;
+			continue;
+		}
+		else{
+			delete strategy;
+			switch(op){
+				case 1:
+					strategy = new defaultStrategy(number);
+					break;
+				case 2:
+					strategy = new newStrategy(number);
+					break;
+				case 3:
+					strategy = new familiarStrategy(number);
+					break;
+				case 4:
+					strategy = new hardStrategy(number);
+					break;
+				case 5:
+					strategy = new unfamiliarStrategy(number);
+					break;
+			}
 			break;
-		else
-			cout << "应为非负数：";
+		}
 	}
-	this->printBlankLines(1);
-	cout << "最高正确率：";
-	while(1){
-		cin >> uc;
-		if(uc >= 0 && uc <= 1)
-			break;
-		else
-			cout << "应为0~1：";
-	}
-	this->printBlankLines(1);
-	cout << "最低正确率：";
-	while(1){
-		cin >> dc;
-		if(dc >= 0 && dc <= uc)
-			break;
-		else
-			cout << "应为0~1：";
-	}
+	cout << "设置成功" << endl;
 	this->pause();
 }
 
 void Beidanci::study(){
-	vector<string> studyWords = user->getSpecificWords(number, dict,
-													   times, uc, dc);
+	vector<string> studyWords = user->getSpecificWords(strategy, dict);
 	for(int i = 0;i < studyWords.size();i++){
 		this->cls();
 		this->printBlankLines(3);
-		cout << studyWords[i] << endl;
+		cout << i+1 << ". " << studyWords[i] << endl;
 		cout << "Do you know it? 1.Yes 2.No" << endl;
 		int op;
 		while(1){

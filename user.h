@@ -3,6 +3,7 @@
 
 #include "history.h"
 #include "dict.h"
+#include "strategy.h"
 
 using namespace std;
 
@@ -12,16 +13,13 @@ class User{
 	vector<int> times;
 	vector<int> correct_times;
 	History his;
-	bool isYourWord(const string& _word, int _times,
-					float _ucorrect, float _dcorrect);
+	bool isYourWord(const string& _word, Strategy* _s);
 public:
 	User(const string& _user);
 	vector<string> getHistory();
 	void updateHistory(const string& _word);
 	void updateWordList(const string& _word, bool _correct);
-	vector<string> getSpecificWords(int _size, Dict* _dict,
-									int _times, float _ucorrect,
-									float _dcorrect);
+	vector<string> getSpecificWords(Strategy* _s, Dict* _dict);
 	~User();
 };
 

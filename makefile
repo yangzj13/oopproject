@@ -1,4 +1,4 @@
-objects = test_w.o dict.o counter.o beidanci.o user.o
+objects = test_w.o dict.o counter.o beidanci.o user.o strategy.o
 
 test_w : $(objects)
 	g++ -o test_w $(objects) -std=c++11 -fexec-charset=GBK -finput-charset=GBK
@@ -12,11 +12,12 @@ dict.o : dict.cpp dict.h word.h
 counter.o : counter.cpp counter.h dict.h word.h
 	g++ -c counter.cpp -std=c++11 -fexec-charset=GBK -finput-charset=GBK
 
-beidanci.o : beidanci.h beidanci.cpp counter.h dict.h word.h command.h
+beidanci.o : beidanci.h beidanci.cpp counter.h dict.h word.h command.h strategy.h
 	g++ -c beidanci.cpp -std=c++11 -fexec-charset=GBK -finput-charset=GBK
-user.o : user.h user.cpp dict.h history.h
+user.o : user.h user.cpp dict.h history.h strategy.cpp strategy.h
 	g++ -c user.cpp -std=c++11 -fexec-charset=GBK -finput-charset=GBK
-
+strategy.o : strategy.cpp strategy.h
+	g++ -c strategy.cpp -std=c++11 -fexec-charset=GBK -finput-charset=GBK
 .PHONY : clean
 clean : 
 	del $(objects)
